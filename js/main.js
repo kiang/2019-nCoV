@@ -21,8 +21,8 @@ var getCityStyle = function(f) {
 }
 
 var appView = new ol.View({
-  center: ol.proj.fromLonLat([120.221507, 23.000694]),
-  zoom: 14
+  center: ol.proj.fromLonLat([114.2600995, 30.6165888]),
+  zoom: 6
 });
 
 var raster = new ol.layer.Tile({
