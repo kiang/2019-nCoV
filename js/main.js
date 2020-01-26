@@ -16,7 +16,7 @@ for (var z = 0; z < 20; ++z) {
 var getCityStyle = function(f) {
   var p = f.getProperties();
   var theStyle = styleYellow.clone();
-  theStyle.getText().setText(p.ADM2_ZH);
+  theStyle.getText().setText(p.ADM1_ZH);
   return theStyle;
 }
 
@@ -31,7 +31,7 @@ var raster = new ol.layer.Tile({
 
 var city = new ol.layer.Vector({
   source: new ol.source.Vector({
-    url: 'json/china.json',
+    url: 'json/adm1.json',
     format: new ol.format.GeoJSON()
   }),
   style: getCityStyle
