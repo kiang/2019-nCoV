@@ -86,11 +86,11 @@ file_put_contents($dataFile, json_encode($data, JSON_PRETTY_PRINT));
 $metaFile = dirname(__DIR__) . '/data/meta.json';
 if(!file_exists($metaFile)) {
     file_put_contents($metaFile, json_encode(array(
-        'begin' => "{$year}/{$today}.json",
-        'end' => "{$year}/{$today}.json",
-    ), JSON_PRETTY_PRINT));
+        'begin' => $today,
+        'end' => $today,
+    ), JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
 } else {
     $meta = json_decode(file_get_contents($metaFile), true);
-    $meta['end'] = "{$year}/{$today}.json";
-    file_put_contents($metaFile, json_encode($meta, JSON_PRETTY_PRINT));
+    $meta['end'] = $today;
+    file_put_contents($metaFile, json_encode($meta, JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
 }
