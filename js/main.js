@@ -16,7 +16,11 @@ for (var z = 0; z < 20; ++z) {
 var getCityStyle = function(f) {
   var p = f.getProperties();
   var theStyle = styleYellow.clone();
-  theStyle.getText().setText(p.ADM1_ZH);
+  if(currentAdm == '2') {
+    theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH);
+  } else {
+    theStyle.getText().setText(p.ADM1_ZH);
+  }
   return theStyle;
 }
 
@@ -29,11 +33,20 @@ var raster = new ol.layer.Tile({
   source: new ol.source.OSM()
 });
 
+var sourceAdm1 = new ol.source.Vector({
+  url: 'json/adm1.json',
+  format: new ol.format.GeoJSON()
+});
+
+var sourceAdm2 = new ol.source.Vector({
+  url: 'json/adm2.json',
+  format: new ol.format.GeoJSON()
+});
+
+var currentAdm = '2';
+
 var city = new ol.layer.Vector({
-  source: new ol.source.Vector({
-    url: 'json/adm1.json',
-    format: new ol.format.GeoJSON()
-  }),
+  source: sourceAdm2,
   style: getCityStyle
 });
 var map = new ol.Map({
@@ -144,11 +157,15 @@ var layerYellow = new ol.style.Style({
   })
 });
 
-$('#btnPrevious').click(function() {
+$('#btnAdm1').click(function() {
+  currentAdm = '1';
+  city.setSource(sourceAdm1);
   return false;
 });
 
-$('#btnNext').click(function() {
+$('#btnAdm2').click(function() {
+  currentAdm = '2';
+  city.setSource(sourceAdm2);
   return false;
 });
 
