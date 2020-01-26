@@ -37,7 +37,7 @@ foreach($json AS $p1) {
         }
     }
     if($provinceFound) {
-        $data['adm1'][$p1['code']] = array(
+        $data['adm1'][$provinceFound] = array(
             'confirmedCount' => $p1['confirmedCount'],
             'suspectedCount' => $p1['suspectedCount'],
             'curedCount' => $p1['curedCount'],

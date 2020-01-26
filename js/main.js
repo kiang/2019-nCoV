@@ -106,6 +106,7 @@ map.on('singleclick', function(evt) {
       var message = '<table class="table table-dark">';
       message += '<tbody>';
       var p = feature.getProperties();
+      console.log(p);
       var dataPoolKey = '';
       if(currentAdm == '2') {
         if(dataPool['adm2'][p.ADM2_PCODE]) {
