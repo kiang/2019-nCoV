@@ -77,6 +77,8 @@ foreach($json AS $p1) {
     }
 
 }
+ksort($data['adm1']);
+ksort($data['adm2']);
 $today = date('Ymd');
 $dataFile = $dataPath . '/' . $today . '.json';
 file_put_contents($dataFile, json_encode($data, JSON_PRETTY_PRINT));
