@@ -46,6 +46,7 @@ var getCityStyle = function(f) {
     }
     theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH + '(' + confirmedCount + ')');
   } else {
+    code = p.ADM1_ZH;
     if(dataPool['adm1'][code]) {
       confirmedCount = dataPool['adm1'][code]['confirmedCount'];
       if(confirmedCount > 1000) {
@@ -106,7 +107,6 @@ map.on('singleclick', function(evt) {
       var message = '<table class="table table-dark">';
       message += '<tbody>';
       var p = feature.getProperties();
-      console.log(p);
       var dataPoolKey = '';
       if(currentAdm == '2') {
         if(dataPool['adm2'][p.ADM2_PCODE]) {
@@ -117,11 +117,11 @@ map.on('singleclick', function(evt) {
         }
         sidebarTitle.innerHTML = p.ADM1_ZH + p.ADM2_ZH;
       } else {
-        if(dataPool['adm1'][p.ADM1_PCODE]) {
-          message += '<tr><th scope="row">確診</th><td>' + dataPool['adm1'][p.ADM1_PCODE]['confirmedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm1'][p.ADM1_PCODE]['suspectedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm1'][p.ADM1_PCODE]['curedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">死亡</th><td>' + dataPool['adm1'][p.ADM1_PCODE]['deadCount'] + '</td></tr>';
+        if(dataPool['adm1'][p.ADM1_ZH]) {
+          message += '<tr><th scope="row">確診</th><td>' + dataPool['adm1'][p.ADM1_ZH]['confirmedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm1'][p.ADM1_ZH]['suspectedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm1'][p.ADM1_ZH]['curedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">死亡</th><td>' + dataPool['adm1'][p.ADM1_ZH]['deadCount'] + '</td></tr>';
         }
         sidebarTitle.innerHTML = p.ADM1_ZH;
       }
