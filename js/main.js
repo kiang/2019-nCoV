@@ -146,7 +146,7 @@ map.on('singleclick', function(evt) {
       theStyle.setStroke(clickStroke);
       feature.setStyle(theStyle);
       if(false !== lastFeature) {
-        lastFeature.setStyle(getCityStyle(feature));
+        lastFeature.setStyle(getCityStyle(lastFeature));
       }
       lastFeature = feature;
     }
