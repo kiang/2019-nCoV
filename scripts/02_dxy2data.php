@@ -86,10 +86,10 @@ foreach($json AS $p1) {
                     'deadCount' => 0,
                 );
             }
-            $data['adm2'][$cityFound]['confirmedCount'] += $p2['confirmedCount'];
-            $data['adm2'][$cityFound]['suspectedCount'] += $p2['suspectedCount'];
-            $data['adm2'][$cityFound]['curedCount'] += $p2['curedCount'];
-            $data['adm2'][$cityFound]['deadCount'] += $p2['deadCount'];
+            $data['adm2'][$cityFound]['confirmedCount'] += $p1['confirmedCount'];
+            $data['adm2'][$cityFound]['suspectedCount'] += $p1['suspectedCount'];
+            $data['adm2'][$cityFound]['curedCount'] += $p1['curedCount'];
+            $data['adm2'][$cityFound]['deadCount'] += $p1['deadCount'];
         }
         
     }
