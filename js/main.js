@@ -25,44 +25,51 @@ $.getJSON('data/meta.json', {}, function(c) {
 
 var getCityStyle = function(f) {
   var p = f.getProperties();
-  var theStyle = styleLv0.clone();
   var codeKey = 'ADM' + currentAdm + '_PCODE';
   var code = p[codeKey];
   var confirmedCount = 0;
+  var lv = 'lv0';
+  var theStyle;
   if(currentAdm == '2') {
     if(dataPool['adm2'][code]) {
       confirmedCount = dataPool['adm2'][code]['confirmedCount'];
       if(confirmedCount > 499) {
-        theStyle = styleLv5.clone();
+        lv = 'lv5';
       } else if(confirmedCount > 299) {
-        theStyle = styleLv4.clone();
+        lv = 'lv4';
       } else if(confirmedCount > 99) {
-        theStyle = styleLv3.clone();
+        lv = 'lv3';
       } else if(confirmedCount > 9) {
-        theStyle = styleLv2.clone();
+        lv = 'lv2';
       } else if(confirmedCount > 0) {
-        theStyle = styleLv1.clone();
+        lv = 'lv1';
       }
     }
+    theStyle = styleLv[lv].clone();
     theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH + '(' + confirmedCount + ')');
   } else {
     code = p.ADM1_ZH;
     if(dataPool['adm1'][code]) {
       confirmedCount = dataPool['adm1'][code]['confirmedCount'];
       if(confirmedCount > 1000) {
-        theStyle = styleLv5.clone();
+        lv = 'lv5';
       } else if(confirmedCount > 499) {
-        theStyle = styleLv4.clone();
+        lv = 'lv4';
       } else if(confirmedCount > 99) {
-        theStyle = styleLv3.clone();
+        lv = 'lv3';
       } else if(confirmedCount > 9) {
-        theStyle = styleLv2.clone();
+        lv = 'lv2';
       } else if(confirmedCount > 0) {
-        theStyle = styleLv1.clone();
+        lv = 'lv1';
       }
     }
+    theStyle = styleLv[lv].clone();
     theStyle.getText().setText(p.ADM1_ZH + '(' + confirmedCount + ')');
   }
+  f.setProperties({
+    'lv': lv,
+    'confirmedCount': confirmedCount
+  });
   return theStyle;
 }
 
@@ -97,6 +104,7 @@ var map = new ol.Map({
   target: 'map',
   view: appView
 });
+var lastFeature = false;
 map.addControl(sidebar);
 map.on('singleclick', function(evt) {
   content.innerHTML = '';
@@ -128,6 +136,19 @@ map.on('singleclick', function(evt) {
       message += '</tbody></table>';
       content.innerHTML = message;
       pointClicked = true;
+
+      var theStyle = styleLv[p.lv].clone();
+      if(currentAdm == '2') {
+        theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH + '(' + p.confirmedCount + ')');
+      } else {
+        theStyle.getText().setText(p.ADM1_ZH + '(' + p.confirmedCount + ')');
+      }
+      theStyle.setStroke(clickStroke);
+      feature.setStyle(theStyle);
+      if(false !== lastFeature) {
+        lastFeature.setStyle(getCityStyle(feature));
+      }
+      lastFeature = feature;
     }
   });
   sidebar.open('home');
@@ -137,48 +158,53 @@ var lvStroke = new ol.style.Stroke({
   color: 'rgba(37,67,140,0.5)',
   width: 1
 });
+var clickStroke = new ol.style.Stroke({
+  color: 'rgba(255,0,0,0.7)',
+  width: 3
+});
 var lvText = new ol.style.Text({
   font: 'bold 16px "Open Sans", "Arial Unicode MS", "sans-serif"',
   fill: new ol.style.Fill({
     color: 'blue'
   })
 });
-var styleLv0 = new ol.style.Style({
+var styleLv = {};
+styleLv['lv0'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
     color: 'rgba(255,255,255,0.1)'
   })
 });
-var styleLv1 = new ol.style.Style({
+styleLv['lv1'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
     color: 'rgba(240,143,127,0.5)'
   })
 });
-var styleLv2 = new ol.style.Style({
+styleLv['lv2'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
     color: 'rgba(226,96,97,0.5)'
   })
 });
-var styleLv3 = new ol.style.Style({
+styleLv['lv3'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
     color: 'rgba(195,69,72,0.5)'
   })
 });
-var styleLv4 = new ol.style.Style({
+styleLv['lv4'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
     color: 'rgba(156,47,49,0.5)'
   })
 });
-var styleLv5 = new ol.style.Style({
+styleLv['lv5'] = new ol.style.Style({
   stroke: lvStroke,
   text: lvText,
   fill: new ol.style.Fill({
