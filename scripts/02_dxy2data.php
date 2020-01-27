@@ -43,24 +43,41 @@ foreach($json AS $p1) {
             'curedCount' => $p1['curedCount'],
             'deadCount' => $p1['deadCount'],
         );
-        foreach($p1['cities'] AS $p2) {
-            $cityFound = false;
-            $key = $provinceFound . $p2['cityName'];
-            if(isset($hardCodes[$key])) {
-                $cityFound = $hardCodes[$key];
-            }
-            foreach($ref[$provinceFound]['cities'] AS $cityName => $cityCode) {
-                if(false === $cityFound && false !== strpos($cityName, $p2['cityName'])) {
-                    $cityFound = $cityCode;
+        if(count($p1['cities']) != 0) {
+            foreach($p1['cities'] AS $p2) {
+                $cityFound = false;
+                $key = $provinceFound . $p2['cityName'];
+                if(isset($hardCodes[$key])) {
+                    $cityFound = $hardCodes[$key];
                 }
-                if(false === $cityFound && false !== strpos($cityName, mb_substr($p2['cityName'], 0, 2, 'utf-8'))) {
-                    $cityFound = $cityCode;
+                foreach($ref[$provinceFound]['cities'] AS $cityName => $cityCode) {
+                    if(false === $cityFound && false !== strpos($cityName, $p2['cityName'])) {
+                        $cityFound = $cityCode;
+                    }
+                    if(false === $cityFound && false !== strpos($cityName, mb_substr($p2['cityName'], 0, 2, 'utf-8'))) {
+                        $cityFound = $cityCode;
+                    }
                 }
+                if(false === $cityFound) {
+                    $cityKey = key($ref[$provinceFound]['cities']);
+                    $cityFound = $ref[$provinceFound]['cities'][$cityKey];
+                }
+                if(!isset($data['adm2'][$cityFound])) {
+                    $data['adm2'][$cityFound] = array(
+                        'confirmedCount' => 0,
+                        'suspectedCount' => 0,
+                        'curedCount' => 0,
+                        'deadCount' => 0,
+                    );
+                }
+                $data['adm2'][$cityFound]['confirmedCount'] += $p2['confirmedCount'];
+                $data['adm2'][$cityFound]['suspectedCount'] += $p2['suspectedCount'];
+                $data['adm2'][$cityFound]['curedCount'] += $p2['curedCount'];
+                $data['adm2'][$cityFound]['deadCount'] += $p2['deadCount'];
             }
-            if(false === $cityFound) {
-                $cityKey = key($ref[$provinceFound]['cities']);
-                $cityFound = $ref[$provinceFound]['cities'][$cityKey];
-            }
+        } else {
+            $cityKey = key($ref[$provinceFound]['cities']);
+            $cityFound = $ref[$provinceFound]['cities'][$cityKey];
             if(!isset($data['adm2'][$cityFound])) {
                 $data['adm2'][$cityFound] = array(
                     'confirmedCount' => 0,
@@ -74,6 +91,7 @@ foreach($json AS $p1) {
             $data['adm2'][$cityFound]['curedCount'] += $p2['curedCount'];
             $data['adm2'][$cityFound]['deadCount'] += $p2['deadCount'];
         }
+        
     }
 
 }
