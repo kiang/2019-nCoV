@@ -229,6 +229,15 @@ $('#btnAdm1').click(function() {
   currentAdm = '1';
   city.setSource(sourcePool[currentAdm]);
   sidebar.close();
+  $('a.btn-adm').each(function(k, obj) {
+    if($(obj).attr('id') === 'btnAdm1') {
+      $(obj).removeClass('btn-secondary');
+      $(obj).addClass('btn-primary');
+    } else {
+      $(obj).removeClass('btn-primary');
+      $(obj).addClass('btn-secondary');
+    }
+  });
   return false;
 });
 
@@ -236,6 +245,15 @@ $('#btnAdm2').click(function() {
   currentAdm = '2';
   city.setSource(sourcePool[currentAdm]);
   sidebar.close();
+  $('a.btn-adm').each(function(k, obj) {
+    if($(obj).attr('id') === 'btnAdm2') {
+      $(obj).removeClass('btn-secondary');
+      $(obj).addClass('btn-primary');
+    } else {
+      $(obj).removeClass('btn-primary');
+      $(obj).addClass('btn-secondary');
+    }
+  });
   return false;
 });
 
