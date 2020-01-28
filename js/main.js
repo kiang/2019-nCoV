@@ -150,6 +150,9 @@ map.on('singleclick', function(evt) {
       content.innerHTML = message;
       pointClicked = true;
 
+      if(false !== lastFeature) {
+        lastFeature.setStyle(getCityStyle(lastFeature));
+      }
       var theStyle = styleLv[p.lv].clone();
       if(currentAdm == '2') {
         theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH + '(' + p.confirmedCount + ')');
@@ -158,9 +161,6 @@ map.on('singleclick', function(evt) {
       }
       theStyle.setStroke(clickStroke);
       feature.setStyle(theStyle);
-      if(false !== lastFeature) {
-        lastFeature.setStyle(getCityStyle(lastFeature));
-      }
       lastFeature = feature;
     }
   });
@@ -228,12 +228,14 @@ styleLv['lv5'] = new ol.style.Style({
 $('#btnAdm1').click(function() {
   currentAdm = '1';
   city.setSource(sourcePool[currentAdm]);
+  sidebar.close();
   return false;
 });
 
 $('#btnAdm2').click(function() {
   currentAdm = '2';
   city.setSource(sourcePool[currentAdm]);
+  sidebar.close();
   return false;
 });
 
