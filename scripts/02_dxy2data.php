@@ -20,7 +20,7 @@ $hardCodes = array(
     '内蒙古自治区满洲里' => 'CN150700',
 );
 $year = date('Y');
-$dataPath = dirname(__DIR__) . '/data/' . $year;
+$dataPath = dirname(__DIR__) . '/data/china/' . $year;
 if(!file_exists($dataPath)) {
     mkdir($dataPath, 0777, true);
 }
