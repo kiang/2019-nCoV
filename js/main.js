@@ -96,79 +96,33 @@ var pointStylePool = {};
 var getPointStyle = function(f) {
   var p = f.getProperties();
   var pointStyle;
+  var radiusSize = 3;
   if(p.Confirmed < 10) {
-    if(!pointStylePool[1]) {
-      pointStylePool[1] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 3,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[1];
+    radiusSize = 3;
   } else if(p.Confirmed < 50) {
-    if(!pointStylePool[2]) {
-      pointStylePool[2] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 7,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[2];
+    radiusSize = 7;
   } else if(p.Confirmed < 100) {
-    if(!pointStylePool[3]) {
-      pointStylePool[3] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 11,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[3];
+    radiusSize = 11;
   } else if(p.Confirmed < 200) {
-    if(!pointStylePool[4]) {
-      pointStylePool[4] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 15,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[4];
+    radiusSize = 15;
   } else if(p.Confirmed < 300) {
-    if(!pointStylePool[5]) {
-      pointStylePool[5] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 19,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[5];
+    radiusSize = 19;
+  } else if(p.Confirmed < 500) {
+    radiusSize = 23;
   } else {
-    if(!pointStylePool[6]) {
-      pointStylePool[6] = new ol.style.Style({
-        image: new ol.style.Circle({
-          radius: 23,
-          fill: new ol.style.Fill({
-            color: 'rgba(255,0,0,0.7)'
-          })
-        }),
-      });
-    }
-    pointStyle = pointStylePool[6];
+    radiusSize = p.Confirmed / 50;
   }
+  if(!pointStylePool[radiusSize]) {
+    pointStylePool[radiusSize] = new ol.style.Style({
+      image: new ol.style.Circle({
+        radius: radiusSize,
+        fill: new ol.style.Fill({
+          color: 'rgba(255,0,0,0.5)'
+        })
+      }),
+    });
+  }
+  pointStyle = pointStylePool[radiusSize];
   return pointStyle;
 }
 
