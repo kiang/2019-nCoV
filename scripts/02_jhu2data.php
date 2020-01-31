@@ -58,7 +58,7 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
             $fc['features'][] = $f;
         }
     }
-    file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
+    file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
 }
 $meta = json_decode(file_get_contents(dirname(__DIR__) . '/data/meta.json'));
 $meta->points = date('Ymd_His', $last);
