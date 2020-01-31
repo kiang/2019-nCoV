@@ -177,23 +177,24 @@ map.on('singleclick', function(evt) {
       var dataPoolKey = '';
       if(currentAdm == '2') {
         if(dataPool['adm2'][p.ADM2_PCODE]) {
-          message += '<tr><th scope="row">區域</th><td>' + p.ADM1_ZH + p.ADM2_ZH + '</td></tr>';
-          message += '<tr><th scope="row">確診</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['confirmedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['suspectedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['curedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">死亡</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['deadCount'] + '</td></tr>';
+          message += '<tr><th scope="row">區域 Area</th><td>' + p.ADM1_ZH + p.ADM2_ZH + '</td></tr>';
+          message += '<tr><th scope="row">確診 Confirmed</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['confirmedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">疑似 Suspected</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['suspectedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">治癒 Recovered</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['curedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">死亡 Deaths</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['deadCount'] + '</td></tr>';
         }
         sidebarTitle.innerHTML = p.ADM1_ZH + p.ADM2_ZH;
       } else {
         if(dataPool['adm1'][p.ADM1_ZH]) {
-          message += '<tr><th scope="row">區域</th><td>' + p.ADM1_ZH + '</td></tr>';
-          message += '<tr><th scope="row">確診</th><td>' + dataPool['adm1'][p.ADM1_ZH]['confirmedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm1'][p.ADM1_ZH]['suspectedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm1'][p.ADM1_ZH]['curedCount'] + '</td></tr>';
-          message += '<tr><th scope="row">死亡</th><td>' + dataPool['adm1'][p.ADM1_ZH]['deadCount'] + '</td></tr>';
+          message += '<tr><th scope="row">區域 Area</th><td>' + p.ADM1_ZH + '</td></tr>';
+          message += '<tr><th scope="row">確診 Confirmed</th><td>' + dataPool['adm1'][p.ADM1_ZH]['confirmedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">疑似 Suspected</th><td>' + dataPool['adm1'][p.ADM1_ZH]['suspectedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">治癒 Revoered</th><td>' + dataPool['adm1'][p.ADM1_ZH]['curedCount'] + '</td></tr>';
+          message += '<tr><th scope="row">死亡 Deaths</th><td>' + dataPool['adm1'][p.ADM1_ZH]['deadCount'] + '</td></tr>';
         }
         sidebarTitle.innerHTML = p.ADM1_ZH;
       }
+      message += '<tr><th scope="row">資料來源 Source</th><td><a href="https://3g.dxy.cn/newh5/view/pneumonia" target="_blank">丁香园</a></td></tr>';
       message += '</tbody></table>';
       pointClicked = true;
 
@@ -215,11 +216,11 @@ map.on('singleclick', function(evt) {
       message += '<tbody>';
       message += '<tr><th scope="row">Country/Region</th><td>' + p['Country/Region'] + '</td></tr>';
       message += '<tr><th scope="row">Province/State</th><td>' + p['Province/State'] + '</td></tr>';
-      message += '<tr><th scope="row">確診</th><td>' + p.Confirmed + '</td></tr>';
-      message += '<tr><th scope="row">治癒</th><td>' + p.Recovered + '</td></tr>';
-      message += '<tr><th scope="row">死亡</th><td>' + p.Deaths + '</td></tr>';
-      message += '<tr><th scope="row">更新時間</th><td>' + p['Last Update'] + '</td></tr>';
-      message += '<tr><th scope="row">資料來源</th><td><a href="https://systems.jhu.edu/research/public-health/ncov/" target="_blank">JHU CSSE</a></td></tr>';
+      message += '<tr><th scope="row">確診 Confirmed</th><td>' + p.Confirmed + '</td></tr>';
+      message += '<tr><th scope="row">治癒 Recovered</th><td>' + p.Recovered + '</td></tr>';
+      message += '<tr><th scope="row">死亡 Deaths</th><td>' + p.Deaths + '</td></tr>';
+      message += '<tr><th scope="row">更新時間 Update</th><td>' + p['Last Update'] + '</td></tr>';
+      message += '<tr><th scope="row">資料來源 Source</th><td><a href="https://systems.jhu.edu/research/public-health/ncov/" target="_blank">JHU CSSE</a></td></tr>';
       sidebarTitle.innerHTML = p['Province/State'] + ',' + p['Country/Region'];
       message += '</tbody></table>';
     }
