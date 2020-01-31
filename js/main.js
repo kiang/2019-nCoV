@@ -16,7 +16,7 @@ for (var z = 0; z < 20; ++z) {
 var dataPool = {};
 $.getJSON('data/meta.json', {}, function(c) {
   var target = c.end.toString();
-  var targetFile = 'data/' + target.substring(0, 4) + '/' + target + '.json';
+  var targetFile = 'data/china/' + target.substring(0, 4) + '/' + target + '.json';
   $.getJSON(targetFile, {}, function(d) {
     dataPool = d;
     var counter = false;
