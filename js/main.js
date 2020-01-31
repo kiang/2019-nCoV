@@ -33,7 +33,13 @@ $.getJSON('data/meta.json', {}, function(c) {
       $('#' + k).html(counter[k]);
     }
     city.setSource(sourcePool[currentAdm]);
-  })
+  });
+
+  var pointSource = new ol.source.Vector({
+    url: 'data/points/' + c.points + '.json',
+    format: new ol.format.GeoJSON()
+  });
+  points.setSource(pointSource);
 });
 
 var getCityStyle = function(f) {
@@ -86,6 +92,86 @@ var getCityStyle = function(f) {
   return theStyle;
 }
 
+var pointStylePool = {};
+var getPointStyle = function(f) {
+  var p = f.getProperties();
+  var pointStyle;
+  if(p.Confirmed < 10) {
+    if(!pointStylePool[1]) {
+      pointStylePool[1] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 3,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[1];
+  } else if(p.Confirmed < 50) {
+    if(!pointStylePool[2]) {
+      pointStylePool[2] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 7,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[2];
+  } else if(p.Confirmed < 100) {
+    if(!pointStylePool[3]) {
+      pointStylePool[3] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 11,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[3];
+  } else if(p.Confirmed < 200) {
+    if(!pointStylePool[4]) {
+      pointStylePool[4] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 15,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[4];
+  } else if(p.Confirmed < 300) {
+    if(!pointStylePool[5]) {
+      pointStylePool[5] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 19,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[5];
+  } else {
+    if(!pointStylePool[6]) {
+      pointStylePool[6] = new ol.style.Style({
+        image: new ol.style.Circle({
+          radius: 23,
+          fill: new ol.style.Fill({
+            color: 'rgba(255,0,0,0.7)'
+          })
+        }),
+      });
+    }
+    pointStyle = pointStylePool[6];
+  }
+  return pointStyle;
+}
+
 var appView = new ol.View({
   center: ol.proj.fromLonLat([114.2600995, 30.6165888]),
   zoom: 6
@@ -112,8 +198,12 @@ var city = new ol.layer.Vector({
   source: null,
   style: getCityStyle
 });
+var points = new ol.layer.Vector({
+  source: null,
+  style: getPointStyle
+});
 var map = new ol.Map({
-  layers: [raster, city],
+  layers: [raster, city, points],
   target: 'map',
   view: appView
 });
@@ -123,14 +213,17 @@ map.on('singleclick', function(evt) {
   content.innerHTML = '';
   pointClicked = false;
 
+  var message = '';
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
-    if(false === pointClicked) {
-      var message = '<table class="table table-dark">';
+    var p = feature.getProperties();
+    if(p.ADM1_ZH) {
+      message += '<table class="table table-dark">';
       message += '<tbody>';
-      var p = feature.getProperties();
+      
       var dataPoolKey = '';
       if(currentAdm == '2') {
         if(dataPool['adm2'][p.ADM2_PCODE]) {
+          message += '<tr><th scope="row">區域</th><td>' + p.ADM1_ZH + p.ADM2_ZH + '</td></tr>';
           message += '<tr><th scope="row">確診</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['confirmedCount'] + '</td></tr>';
           message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['suspectedCount'] + '</td></tr>';
           message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm2'][p.ADM2_PCODE]['curedCount'] + '</td></tr>';
@@ -139,6 +232,7 @@ map.on('singleclick', function(evt) {
         sidebarTitle.innerHTML = p.ADM1_ZH + p.ADM2_ZH;
       } else {
         if(dataPool['adm1'][p.ADM1_ZH]) {
+          message += '<tr><th scope="row">區域</th><td>' + p.ADM1_ZH + '</td></tr>';
           message += '<tr><th scope="row">確診</th><td>' + dataPool['adm1'][p.ADM1_ZH]['confirmedCount'] + '</td></tr>';
           message += '<tr><th scope="row">疑似</th><td>' + dataPool['adm1'][p.ADM1_ZH]['suspectedCount'] + '</td></tr>';
           message += '<tr><th scope="row">治癒</th><td>' + dataPool['adm1'][p.ADM1_ZH]['curedCount'] + '</td></tr>';
@@ -147,7 +241,6 @@ map.on('singleclick', function(evt) {
         sidebarTitle.innerHTML = p.ADM1_ZH;
       }
       message += '</tbody></table>';
-      content.innerHTML = message;
       pointClicked = true;
 
       if(false !== lastFeature) {
@@ -163,7 +256,19 @@ map.on('singleclick', function(evt) {
       feature.setStyle(theStyle);
       lastFeature = feature;
     }
+    if(p.Confirmed) {
+      message += '<table class="table table-dark">';
+      message += '<tbody>';
+      message += '<tr><th scope="row">Country/Region</th><td>' + p['Country/Region'] + '</td></tr>';
+      message += '<tr><th scope="row">Province/State</th><td>' + p['Province/State'] + '</td></tr>';
+      message += '<tr><th scope="row">確診</th><td>' + p.Confirmed + '</td></tr>';
+      message += '<tr><th scope="row">治癒</th><td>' + p.Recovered + '</td></tr>';
+      message += '<tr><th scope="row">死亡</th><td>' + p.Deaths + '</td></tr>';
+      sidebarTitle.innerHTML = p['Province/State'] + ',' + p['Country/Region'];
+      message += '</tbody></table>';
+    }
   });
+  content.innerHTML = message;
   sidebar.open('home');
 });
 
