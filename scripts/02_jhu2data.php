@@ -10,6 +10,7 @@ if(!file_exists($pointPath)) {
 }
 $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
+$last = 0;
 foreach(glob($filePath . '/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
     $ymd = array('2020');
@@ -23,6 +24,9 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
         $his = date('H:i:s', strtotime($parts[1]));
     }
     $sheetTime = strtotime(implode('-', $ymd) . ' ' . $his);
+    if($sheetTime > $last) {
+        $last = $sheetTime;
+    }
     $pointFile = $pointPath . '/' . date('Ymd_His', $sheetTime) . '.json';
     $fc = array(
         'type' => 'FeatureCollection',
@@ -56,3 +60,6 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
     }
     file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
+$meta = json_decode(file_get_contents(dirname(__DIR__) . '/data/meta.json'));
+$meta->points = date('Ymd_His', $last);
+file_put_contents(dirname(__DIR__) . '/data/meta.json', json_encode($meta, JSON_PRETTY_PRINT));
