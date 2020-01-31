@@ -4,21 +4,55 @@ $tmpPath = dirname(__DIR__) . '/osm/jhu.edu';
 if(!file_exists($tmpPath)) {
     mkdir($tmpPath, 0777, true);
 }
+$pointPath = dirname(__DIR__) . '/data/points';
+if(!file_exists($pointPath)) {
+    mkdir($pointPath, 0777, true);
+}
 $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
 foreach(glob($filePath . '/*.csv') AS $csvFile) {
+    $p = pathinfo($csvFile);
+    $ymd = array('2020');
+    $ymd[] = date('m', strtotime(substr($p['filename'], 0, 3)));
+    $parts = explode('_', substr($p['filename'], 3));
+    $ymd[] = str_pad($parts[0], 2, '0', STR_PAD_LEFT);
+    if(strlen($parts[1]) < 5) {
+        $his = date('H:i:s', strtotime($parts[1]));
+    } else {
+        $parts[1] = substr($parts[1], 0, -4) . ':' . substr($parts[1], -4);
+        $his = date('H:i:s', strtotime($parts[1]));
+    }
+    $sheetTime = strtotime(implode('-', $ymd) . ' ' . $his);
+    $pointFile = $pointPath . '/' . date('Ymd_His', $sheetTime) . '.json';
+    $fc = array(
+        'type' => 'FeatureCollection',
+        'features' => array(),
+    );
     $fh = fopen($csvFile, 'r');
     $head = fgetcsv($fh, 2048);
     while($line = fgetcsv($fh, 2048)) {
         $data = array_combine($head, $line);
+        $f = array(
+            'type' => 'Feature',
+            'properties' => $data,
+            'geometry' => array(
+                'type' => 'Point',
+                'coordinates' => array(),
+            ),
+        );
         if($data['Country/Region'] === 'Mainland China') {
             $data['Country/Region'] = 'China';
         }
         $cacheFile = "{$tmpPath}/{$data['Province/State']}_{$data['Country/Region']}.json";
         if(!file_exists($cacheFile)) {
-            echo $qUrl = $baseUrl . urlencode("{$data['Province/State']}, {$data['Country/Region']}");
+            $qUrl = $baseUrl . urlencode("{$data['Province/State']}, {$data['Country/Region']}");
             file_put_contents($cacheFile, file_get_contents($qUrl));
         }
-        $json = json_decode(file_get_contents($cacheFile));
+        $json = json_decode(file_get_contents($cacheFile), true);
+        if(!empty($json[0]['lat'])) {
+            $f['geometry']['coordinates'] = array($json[0]['lon'], $json[0]['lat']);
+            $fc['features'][] = $f;
+        }
     }
+    file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT));
 }
