@@ -653,7 +653,7 @@
                 "cityName": "衡阳",
                 "confirmedCount": 30,
                 "suspectedCount": 0,
-                "curedCount": 3,
+                "curedCount": 0,
                 "deadCount": 0,
                 "locationId": 430400
             },
@@ -1810,11 +1810,11 @@
     {
         "provinceName": "上海市",
         "provinceShortName": "上海",
-        "confirmedCount": 177,
+        "confirmedCount": 182,
         "suspectedCount": 0,
         "curedCount": 10,
         "deadCount": 1,
-        "comment": "治愈数据统一归属上海市公卫临床中心，暂无具体分区",
+        "comment": "待明确地区：确诊 5；治愈数据统一归属上海市公卫临床中心，暂无具体分区",
         "locationId": 310000,
         "cities": [
             {
@@ -2898,7 +2898,7 @@
     {
         "provinceName": "天津市",
         "provinceShortName": "天津",
-        "confirmedCount": 45,
+        "confirmedCount": 48,
         "suspectedCount": 0,
         "curedCount": 0,
         "deadCount": 0,
@@ -2920,6 +2920,14 @@
                 "curedCount": 0,
                 "deadCount": 0,
                 "locationId": 120102
+            },
+            {
+                "cityName": "宁河区",
+                "confirmedCount": 5,
+                "suspectedCount": 0,
+                "curedCount": 0,
+                "deadCount": 0,
+                "locationId": 120117
             },
             {
                 "cityName": "和平区",
@@ -2992,14 +3000,6 @@
                 "curedCount": 0,
                 "deadCount": 0,
                 "locationId": 120106
-            },
-            {
-                "cityName": "宁河区",
-                "confirmedCount": 2,
-                "suspectedCount": 0,
-                "curedCount": 0,
-                "deadCount": 0,
-                "locationId": 120117
             }
         ]
     },
@@ -3479,24 +3479,13 @@
         "cities": []
     },
     {
-        "provinceName": "台湾",
-        "provinceShortName": "台湾",
-        "confirmedCount": 10,
-        "suspectedCount": 0,
-        "curedCount": 0,
-        "deadCount": 0,
-        "comment": "",
-        "locationId": 710000,
-        "cities": []
-    },
-    {
         "provinceName": "青海省",
         "provinceShortName": "青海",
-        "confirmedCount": 9,
+        "confirmedCount": 11,
         "suspectedCount": 0,
         "curedCount": 0,
         "deadCount": 0,
-        "comment": "",
+        "comment": "待明确地区：确诊 2",
         "locationId": 630000,
         "cities": [
             {
@@ -3508,6 +3497,17 @@
                 "locationId": 630100
             }
         ]
+    },
+    {
+        "provinceName": "台湾",
+        "provinceShortName": "台湾",
+        "confirmedCount": 10,
+        "suspectedCount": 0,
+        "curedCount": 0,
+        "deadCount": 0,
+        "comment": "",
+        "locationId": 710000,
+        "cities": []
     },
     {
         "provinceName": "澳门",
