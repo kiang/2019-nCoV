@@ -36,6 +36,14 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
     $head = fgetcsv($fh, 2048);
     while($line = fgetcsv($fh, 2048)) {
         $data = array_combine($head, $line);
+        if(isset($data['Country'])) {
+            $data['Country/Region'] = $data['Country'];
+            unset($data['Country']);
+        }
+        if(isset($data['Date last updated'])) {
+            $data['Last Update'] = $data['Date last updated'];
+            unset($data['Date last updated']);
+        }
         $f = array(
             'type' => 'Feature',
             'properties' => $data,
