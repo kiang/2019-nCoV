@@ -219,7 +219,7 @@ map.on('singleclick', function(evt) {
       message += '<tr><th scope="row">確診 Confirmed</th><td>' + p.Confirmed + '</td></tr>';
       message += '<tr><th scope="row">治癒 Recovered</th><td>' + p.Recovered + '</td></tr>';
       message += '<tr><th scope="row">死亡 Deaths</th><td>' + p.Deaths + '</td></tr>';
-      message += '<tr><th scope="row">更新時間 Update</th><td>' + p['Last Update'] + '</td></tr>';
+      message += '<tr><th scope="row">更新時間 Update(UTC)</th><td>' + p['Last Update (UTC)'] + '</td></tr>';
       message += '<tr><th scope="row">資料來源 Source</th><td><a href="https://systems.jhu.edu/research/public-health/ncov/" target="_blank">JHU CSSE</a></td></tr>';
       sidebarTitle.innerHTML = p['Province/State'] + ',' + p['Country/Region'];
       message += '</tbody></table>';

@@ -13,6 +13,9 @@ $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . url
 $last = 0;
 foreach(glob($filePath . '/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
+    if($p['filename'] === 'Notice') {
+        continue;
+    }
     $ymd = array('2020');
     $ymd[] = date('m', strtotime(substr($p['filename'], 0, 3)));
     $parts = explode('_', substr($p['filename'], 3));
@@ -41,7 +44,7 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
             unset($data['Country']);
         }
         if(isset($data['Date last updated'])) {
-            $data['Last Update'] = $data['Date last updated'];
+            $data['Last Update (UTC)'] = $data['Date last updated'];
             unset($data['Date last updated']);
         }
         $f = array(
