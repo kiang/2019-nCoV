@@ -110,7 +110,10 @@ var getPointStyle = function(f) {
   } else if(p.Confirmed < 500) {
     radiusSize = 23;
   } else {
-    radiusSize = p.Confirmed / 50;
+    radiusSize = p.Confirmed / 100;
+    if(radiusSize < 27) {
+      radiusSize = 27;
+    }
   }
   if(!pointStylePool[radiusSize]) {
     pointStylePool[radiusSize] = new ol.style.Style({
