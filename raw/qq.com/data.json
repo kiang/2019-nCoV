@@ -3,15 +3,15 @@
         "confirm": 31270,
         "suspect": 26359,
         "dead": 638,
-        "heal": 1690
+        "heal": 1689
     },
     "chinaAdd": {
         "confirm": 59,
         "suspect": 0,
         "dead": 1,
-        "heal": 148
+        "heal": 147
     },
-    "lastUpdateTime": "2020-02-08 01:44:44",
+    "lastUpdateTime": "2020-02-08 03:47:02",
     "areaTree": [
         {
             "name": "中国",
@@ -26,7 +26,7 @@
                 "confirm": 31270,
                 "suspect": 26359,
                 "dead": 638,
-                "heal": 1690
+                "heal": 1689
             },
             "children": [
                 {
@@ -3154,7 +3154,7 @@
                             }
                         },
                         {
-                            "name": "甘孜",
+                            "name": "内江",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -3170,7 +3170,7 @@
                             }
                         },
                         {
-                            "name": "内江",
+                            "name": "甘孜",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -3234,7 +3234,7 @@
                             }
                         },
                         {
-                            "name": "自贡",
+                            "name": "宜宾",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -3250,7 +3250,7 @@
                             }
                         },
                         {
-                            "name": "宜宾",
+                            "name": "自贡",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4996,17 +4996,17 @@
                 {
                     "name": "云南",
                     "today": {
-                        "confirm": 0,
+                        "confirm": 2,
                         "suspect": 0,
                         "dead": 0,
                         "heal": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
-                        "confirm": 136,
+                        "confirm": 138,
                         "suspect": 0,
                         "dead": 0,
-                        "heal": 13
+                        "heal": 12
                     },
                     "children": [
                         {
@@ -5044,17 +5044,33 @@
                         {
                             "name": "玉溪",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 13,
+                                "confirm": 14,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 2
+                            }
+                        },
+                        {
+                            "name": "曲靖",
+                            "today": {
+                                "confirm": 1,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 11,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 1
                             }
                         },
                         {
@@ -5071,22 +5087,6 @@
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 2
-                            }
-                        },
-                        {
-                            "name": "曲靖",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 10,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1
                             }
                         },
                         {
@@ -5138,22 +5138,6 @@
                             }
                         },
                         {
-                            "name": "德宏州",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 5,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0
-                            }
-                        },
-                        {
                             "name": "红河",
                             "today": {
                                 "confirm": 0,
@@ -5170,7 +5154,7 @@
                             }
                         },
                         {
-                            "name": "楚雄州",
+                            "name": "德宏州",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -5179,7 +5163,7 @@
                                 "isUpdated": false
                             },
                             "total": {
-                                "confirm": 4,
+                                "confirm": 5,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0
@@ -5202,7 +5186,7 @@
                             }
                         },
                         {
-                            "name": "临沧",
+                            "name": "楚雄州",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -5211,7 +5195,7 @@
                                 "isUpdated": false
                             },
                             "total": {
-                                "confirm": 1,
+                                "confirm": 4,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0
@@ -5234,7 +5218,7 @@
                             }
                         },
                         {
-                            "name": "地区待确认",
+                            "name": "临沧",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -5243,10 +5227,26 @@
                                 "isUpdated": false
                             },
                             "total": {
+                                "confirm": 1,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0
+                            }
+                        },
+                        {
+                            "name": "地区待确认",
+                            "today": {
                                 "confirm": 0,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 1
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0
                             }
                         }
                     ]
