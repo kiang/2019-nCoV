@@ -1,4 +1,8 @@
 <?php
+$rootPath = dirname(__DIR__);
+$repo = "{$rootPath}/tmp/2019-nCoV";
+exec("cd {$repo} && /usr/bin/git pull");
+
 require dirname(__DIR__) . '/env.php';
 $tmpPath = dirname(__DIR__) . '/osm/jhu.edu';
 if(!file_exists($tmpPath)) {
@@ -11,22 +15,16 @@ if(!file_exists($pointPath)) {
 $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
 $last = 0;
-foreach(glob($filePath . '/*.csv') AS $csvFile) {
+foreach(glob($repo . '/daily_case_updates/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
     if($p['filename'] === 'Notice') {
         continue;
     }
-    $ymd = array('2020');
-    $ymd[] = date('m', strtotime(substr($p['filename'], 0, 3)));
-    $parts = explode('_', substr($p['filename'], 3));
-    $ymd[] = str_pad($parts[0], 2, '0', STR_PAD_LEFT);
-    if(strlen($parts[1]) < 5) {
-        $his = date('H:i:s', strtotime($parts[1]));
-    } else {
-        $parts[1] = substr($parts[1], 0, -4) . ':' . substr($parts[1], -4);
-        $his = date('H:i:s', strtotime($parts[1]));
-    }
-    $sheetTime = strtotime(implode('-', $ymd) . ' ' . $his);
+    $parts1 = explode('_', $p['filename']);
+    $parts2 = explode('-', $parts1[0]);
+    $parts3 = array(substr($parts1[1], 0, 2), substr($parts1[1], 2, 2), '00');
+    $sheetTime = strtotime(implode('-', array($parts2[2], $parts2[0], $parts2[1])) . implode(':', $parts3));
+
     if($sheetTime > $last) {
         $last = $sheetTime;
     }
@@ -37,6 +35,9 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
     );
     $fh = fopen($csvFile, 'r');
     $head = fgetcsv($fh, 2048);
+    if('efbbbf' === bin2hex(substr($head[0], 0, 3))) {
+        $head[0] = substr($head[0], 3);
+    }
     while($line = fgetcsv($fh, 2048)) {
         $data = array_combine($head, $line);
         if(isset($data['Country'])) {
@@ -47,6 +48,12 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
             $data['Last Update (UTC)'] = $data['Date last updated'];
             unset($data['Date last updated']);
         }
+        switch($data['Country/Region']) {
+            case 'Mainland China':
+            case 'Macau':
+                $data['Country/Region'] = 'China';
+            break;
+        }
         $f = array(
             'type' => 'Feature',
             'properties' => $data,
@@ -55,9 +62,6 @@ foreach(glob($filePath . '/*.csv') AS $csvFile) {
                 'coordinates' => array(),
             ),
         );
-        if($data['Country/Region'] === 'Mainland China') {
-            $data['Country/Region'] = 'China';
-        }
         $cacheFile = "{$tmpPath}/{$data['Province/State']}_{$data['Country/Region']}.json";
         if(!file_exists($cacheFile)) {
             $qUrl = $baseUrl . urlencode("{$data['Province/State']}, {$data['Country/Region']}");
