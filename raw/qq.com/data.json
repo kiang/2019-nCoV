@@ -1,16 +1,16 @@
 {
-    "lastUpdateTime": "2020-02-12 15:44:21",
+    "lastUpdateTime": "2020-02-12 16:41:39",
     "chinaTotal": {
-        "confirm": 44750,
+        "confirm": 44754,
         "suspect": 16067,
         "dead": 1115,
-        "heal": 4779
+        "heal": 4787
     },
     "chinaAdd": {
-        "confirm": 2042,
+        "confirm": 2046,
         "suspect": -5608,
         "dead": 98,
-        "heal": 781
+        "heal": 789
     },
     "isShowAdd": true,
     "chinaDayList": [
@@ -886,15 +886,15 @@
             "addRate": "166.67"
         },
         {
-            "name": "吉林",
-            "yesterday": "2",
-            "before": "1",
-            "addRate": "100.00"
-        },
-        {
             "name": "北京",
             "yesterday": "10",
             "before": "5",
+            "addRate": "100.00"
+        },
+        {
+            "name": "吉林",
+            "yesterday": "2",
+            "before": "1",
             "addRate": "100.00"
         },
         {
@@ -928,15 +928,15 @@
             "addRate": "40.00"
         },
         {
-            "name": "宁夏",
-            "yesterday": "5",
-            "before": "4",
-            "addRate": "25.00"
-        },
-        {
             "name": "江西",
             "yesterday": "40",
             "before": "32",
+            "addRate": "25.00"
+        },
+        {
+            "name": "宁夏",
+            "yesterday": "5",
+            "before": "4",
             "addRate": "25.00"
         },
         {
@@ -952,13 +952,7 @@
             "addRate": "3.03"
         },
         {
-            "name": "内蒙古",
-            "yesterday": "2",
-            "before": "0",
-            "addRate": ""
-        },
-        {
-            "name": "西藏",
+            "name": "澳门",
             "yesterday": "0",
             "before": "0",
             "addRate": ""
@@ -970,15 +964,21 @@
             "addRate": ""
         },
         {
-            "name": "澳门",
+            "name": "台湾",
             "yesterday": "0",
+            "before": "",
+            "addRate": ""
+        },
+        {
+            "name": "内蒙古",
+            "yesterday": "2",
             "before": "0",
             "addRate": ""
         },
         {
-            "name": "台湾",
+            "name": "西藏",
             "yesterday": "0",
-            "before": "",
+            "before": "0",
             "addRate": ""
         },
         {
@@ -1076,21 +1076,21 @@
         {
             "name": "中国",
             "today": {
-                "confirm": 2042,
+                "confirm": 2046,
                 "suspect": 0,
                 "dead": 0,
                 "heal": 0,
                 "isUpdated": true
             },
             "total": {
-                "confirm": 44750,
+                "confirm": 44754,
                 "suspect": 16067,
                 "dead": 1115,
-                "heal": 4779,
+                "heal": 4787,
                 "showRate": false,
                 "showHeal": true,
                 "deadRate": 2.49,
-                "healRate": 10.68
+                "healRate": 10.7
             },
             "children": [
                 {
@@ -3708,26 +3708,6 @@
                             }
                         },
                         {
-                            "name": "宿迁",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 12,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 6,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 50
-                            }
-                        },
-                        {
                             "name": "镇江",
                             "today": {
                                 "confirm": 0,
@@ -3746,47 +3726,67 @@
                                 "deadRate": 0,
                                 "healRate": 16.67
                             }
-                        }
-                    ]
-                },
-                {
-                    "name": "重庆",
-                    "today": {
-                        "confirm": 19,
-                        "suspect": 0,
-                        "dead": 0,
-                        "heal": 0,
-                        "isUpdated": true
-                    },
-                    "total": {
-                        "confirm": 505,
-                        "suspect": 0,
-                        "dead": 3,
-                        "heal": 79,
-                        "showRate": false,
-                        "showHeal": true,
-                        "deadRate": 0.59,
-                        "healRate": 15.64
-                    },
-                    "children": [
+                        },
                         {
-                            "name": "万州区",
+                            "name": "宿迁",
                             "today": {
-                                "confirm": 3,
+                                "confirm": 0,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 101,
+                                "confirm": 12,
                                 "suspect": 0,
-                                "dead": 1,
-                                "heal": 14,
+                                "dead": 0,
+                                "heal": 6,
                                 "showRate": false,
                                 "showHeal": true,
-                                "deadRate": 0.99,
-                                "healRate": 13.86
+                                "deadRate": 0,
+                                "healRate": 50
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "重庆",
+                    "today": {
+                        "confirm": 23,
+                        "suspect": 0,
+                        "dead": 0,
+                        "heal": 0,
+                        "isUpdated": true
+                    },
+                    "total": {
+                        "confirm": 509,
+                        "suspect": 0,
+                        "dead": 3,
+                        "heal": 87,
+                        "showRate": false,
+                        "showHeal": true,
+                        "deadRate": 0.59,
+                        "healRate": 17.09
+                    },
+                    "children": [
+                        {
+                            "name": "万州区",
+                            "today": {
+                                "confirm": 4,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 102,
+                                "suspect": 0,
+                                "dead": 1,
+                                "heal": 15,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0.98,
+                                "healRate": 14.71
                             }
                         },
                         {
@@ -3816,17 +3816,17 @@
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 21,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 10,
+                                "heal": 11,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 0,
-                                "healRate": 47.62
+                                "healRate": 52.38
                             }
                         },
                         {
@@ -3842,11 +3842,11 @@
                                 "confirm": 20,
                                 "suspect": 0,
                                 "dead": 1,
-                                "heal": 10,
+                                "heal": 11,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 5,
-                                "healRate": 50
+                                "healRate": 55
                             }
                         },
                         {
@@ -3936,17 +3936,37 @@
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 19,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 6,
+                                "heal": 7,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 0,
-                                "healRate": 31.58
+                                "healRate": 36.84
+                            }
+                        },
+                        {
+                            "name": "綦江区",
+                            "today": {
+                                "confirm": 3,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 18,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 0
                             }
                         },
                         {
@@ -3970,9 +3990,9 @@
                             }
                         },
                         {
-                            "name": "綦江区",
+                            "name": "两江新区",
                             "today": {
-                                "confirm": 1,
+                                "confirm": 0,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
@@ -3982,11 +4002,11 @@
                                 "confirm": 16,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 0,
+                                "heal": 2,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 0,
-                                "healRate": 0
+                                "healRate": 12.5
                             }
                         },
                         {
@@ -4007,26 +4027,6 @@
                                 "showHeal": true,
                                 "deadRate": 0,
                                 "healRate": 18.75
-                            }
-                        },
-                        {
-                            "name": "两江新区",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 16,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 6.25
                             }
                         },
                         {
@@ -4070,26 +4070,6 @@
                             }
                         },
                         {
-                            "name": "大足区",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 14,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 7.14
-                            }
-                        },
-                        {
                             "name": "石柱县",
                             "today": {
                                 "confirm": 0,
@@ -4110,6 +4090,26 @@
                             }
                         },
                         {
+                            "name": "大足区",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 14,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 1,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 7.14
+                            }
+                        },
+                        {
                             "name": "巫溪县",
                             "today": {
                                 "confirm": 1,
@@ -4122,31 +4122,11 @@
                                 "confirm": 13,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 4,
+                                "heal": 6,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 0,
-                                "healRate": 30.77
-                            }
-                        },
-                        {
-                            "name": "丰都县",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 10,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 10
+                                "healRate": 46.15
                             }
                         },
                         {
@@ -4170,7 +4150,7 @@
                             }
                         },
                         {
-                            "name": "南岸区",
+                            "name": "丰都县",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4179,27 +4159,27 @@
                                 "isUpdated": false
                             },
                             "total": {
-                                "confirm": 9,
+                                "confirm": 10,
                                 "suspect": 0,
                                 "dead": 0,
-                                "heal": 0,
+                                "heal": 1,
                                 "showRate": false,
                                 "showHeal": true,
                                 "deadRate": 0,
-                                "healRate": 0
+                                "healRate": 10
                             }
                         },
                         {
-                            "name": "沙坪坝区",
+                            "name": "南岸区",
                             "today": {
-                                "confirm": 6,
+                                "confirm": 1,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 8,
+                                "confirm": 10,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
@@ -4230,7 +4210,7 @@
                             }
                         },
                         {
-                            "name": "铜梁区",
+                            "name": "荣昌区",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4250,7 +4230,27 @@
                             }
                         },
                         {
-                            "name": "荣昌区",
+                            "name": "沙坪坝区",
+                            "today": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 8,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 0
+                            }
+                        },
+                        {
+                            "name": "铜梁区",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4330,7 +4330,7 @@
                             }
                         },
                         {
-                            "name": "梁平区",
+                            "name": "江津区",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4347,6 +4347,26 @@
                                 "showHeal": true,
                                 "deadRate": 0,
                                 "healRate": 25
+                            }
+                        },
+                        {
+                            "name": "梁平区",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 4,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 2,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 50
                             }
                         },
                         {
@@ -4370,26 +4390,6 @@
                             }
                         },
                         {
-                            "name": "江津区",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 4,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 25
-                            }
-                        },
-                        {
                             "name": "涪陵区",
                             "today": {
                                 "confirm": 0,
@@ -4400,46 +4400,6 @@
                             },
                             "total": {
                                 "confirm": 3,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 0
-                            }
-                        },
-                        {
-                            "name": "黔江区",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 2,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 2,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 100
-                            }
-                        },
-                        {
-                            "name": "彭水县",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 2,
                                 "suspect": 0,
                                 "dead": 0,
                                 "heal": 0,
@@ -4470,7 +4430,47 @@
                             }
                         },
                         {
-                            "name": "酉阳县",
+                            "name": "彭水县",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 2,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 0
+                            }
+                        },
+                        {
+                            "name": "黔江区",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 2,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 2,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 100
+                            }
+                        },
+                        {
+                            "name": "万盛经开区",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -4490,7 +4490,7 @@
                             }
                         },
                         {
-                            "name": "万盛经开区",
+                            "name": "酉阳县",
                             "today": {
                                 "confirm": 0,
                                 "suspect": 0,
@@ -10234,48 +10234,6 @@
                     ]
                 },
                 {
-                    "name": "台湾",
-                    "today": {
-                        "confirm": 0,
-                        "suspect": 0,
-                        "dead": 0,
-                        "heal": 0,
-                        "isUpdated": true
-                    },
-                    "total": {
-                        "confirm": 18,
-                        "suspect": 0,
-                        "dead": 0,
-                        "heal": 1,
-                        "showRate": false,
-                        "showHeal": true,
-                        "deadRate": 0,
-                        "healRate": 5.56
-                    },
-                    "children": [
-                        {
-                            "name": "地区待确认",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 18,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 5.56
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "青海",
                     "today": {
                         "confirm": 0,
@@ -10353,6 +10311,48 @@
                                 "showHeal": true,
                                 "deadRate": null,
                                 "healRate": null
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "台湾",
+                    "today": {
+                        "confirm": 0,
+                        "suspect": 0,
+                        "dead": 0,
+                        "heal": 0,
+                        "isUpdated": true
+                    },
+                    "total": {
+                        "confirm": 18,
+                        "suspect": 0,
+                        "dead": 0,
+                        "heal": 1,
+                        "showRate": false,
+                        "showHeal": true,
+                        "deadRate": 0,
+                        "healRate": 5.56
+                    },
+                    "children": [
+                        {
+                            "name": "地区待确认",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 18,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 1,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 5.56
                             }
                         }
                     ]
@@ -10564,26 +10564,6 @@
             }
         },
         {
-            "name": "越南",
-            "today": {
-                "confirm": 0,
-                "suspect": 0,
-                "dead": 0,
-                "heal": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 15,
-                "suspect": 0,
-                "dead": 0,
-                "heal": 6,
-                "showRate": false,
-                "showHeal": true,
-                "deadRate": 0,
-                "healRate": 40
-            }
-        },
-        {
             "name": "澳大利亚",
             "today": {
                 "confirm": 0,
@@ -10601,6 +10581,26 @@
                 "showHeal": true,
                 "deadRate": 0,
                 "healRate": 33.33
+            }
+        },
+        {
+            "name": "越南",
+            "today": {
+                "confirm": 0,
+                "suspect": 0,
+                "dead": 0,
+                "heal": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 15,
+                "suspect": 0,
+                "dead": 0,
+                "heal": 6,
+                "showRate": false,
+                "showHeal": true,
+                "deadRate": 0,
+                "healRate": 40
             }
         },
         {
@@ -10644,26 +10644,6 @@
             }
         },
         {
-            "name": "英国",
-            "today": {
-                "confirm": 0,
-                "suspect": 0,
-                "dead": 0,
-                "heal": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 8,
-                "suspect": 0,
-                "dead": 0,
-                "heal": 0,
-                "showRate": false,
-                "showHeal": true,
-                "deadRate": 0,
-                "healRate": 0
-            }
-        },
-        {
             "name": "阿联酋",
             "today": {
                 "confirm": 0,
@@ -10681,6 +10661,26 @@
                 "showHeal": true,
                 "deadRate": 0,
                 "healRate": 12.5
+            }
+        },
+        {
+            "name": "英国",
+            "today": {
+                "confirm": 0,
+                "suspect": 0,
+                "dead": 0,
+                "heal": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 8,
+                "suspect": 0,
+                "dead": 0,
+                "heal": 0,
+                "showRate": false,
+                "showHeal": true,
+                "deadRate": 0,
+                "healRate": 0
             }
         },
         {
@@ -10926,6 +10926,16 @@
     ],
     "articleList": [
         {
+            "cmsId": "CSD2020021200870400",
+            "source": "push",
+            "media": "健康山东",
+            "publish_time": "2020-02-12 15:14:24",
+            "can_use": 1,
+            "desc": "2月12日0-12时，山东无新增新冠肺炎确诊病例，累计确诊497例，其中死亡病例2例；新增疑似病例5例，现有疑似病例71例。",
+            "url": "https:\/\/view.inews.qq.com\/a\/CSD2020021200870400",
+            "title": "山东无新增确诊病例 累计死亡病例2例"
+        },
+        {
             "cmsId": "KCV2020021200817908",
             "source": "manual",
             "media": "人民日报",
@@ -11014,16 +11024,6 @@
             "desc": "截至2月12日10时，陕西新增6例新冠肺炎确诊病例，均为西安市病例，累计225例，36例治愈出院。新增疑似病例35例。",
             "url": "https:\/\/view.inews.qq.com\/a\/XAC2020021200383500",
             "title": "陕西新增6例新冠肺炎病例 累计225例"
-        },
-        {
-            "cmsId": "CYN2020021200319100",
-            "source": "push",
-            "media": "云南省卫健委",
-            "publish_time": "2020-02-12 09:39:27",
-            "can_use": 1,
-            "desc": "通报！11日12时至24时，云南新增1例确诊病例：常住云南，曾到达多地；全省累计报告确诊病例154例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/CYN2020021200319100",
-            "title": "云南新增1例确诊病例 患者详情曝光"
         }
     ]
 }
