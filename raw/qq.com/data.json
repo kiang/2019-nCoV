@@ -964,18 +964,6 @@
             "addRate": "9.09"
         },
         {
-            "name": "吉林",
-            "yesterday": "2",
-            "before": "2",
-            "addRate": "0.00"
-        },
-        {
-            "name": "北京",
-            "yesterday": "14",
-            "before": "14",
-            "addRate": "0.00"
-        },
-        {
             "name": "广西",
             "yesterday": "4",
             "before": "0",
@@ -986,30 +974,6 @@
             "yesterday": "",
             "before": "0",
             "addRate": ""
-        },
-        {
-            "name": "天津",
-            "yesterday": "7",
-            "before": "7",
-            "addRate": "0.00"
-        },
-        {
-            "name": "澳门",
-            "yesterday": "0",
-            "before": "0",
-            "addRate": ""
-        },
-        {
-            "name": "广东",
-            "yesterday": "22",
-            "before": "22",
-            "addRate": "0.00"
-        },
-        {
-            "name": "宁夏",
-            "yesterday": "6",
-            "before": "6",
-            "addRate": "0.00"
         },
         {
             "name": "青海",
@@ -1024,9 +988,45 @@
             "addRate": ""
         },
         {
+            "name": "澳门",
+            "yesterday": "0",
+            "before": "0",
+            "addRate": ""
+        },
+        {
+            "name": "天津",
+            "yesterday": "7",
+            "before": "7",
+            "addRate": "0.00"
+        },
+        {
+            "name": "吉林",
+            "yesterday": "2",
+            "before": "2",
+            "addRate": "0.00"
+        },
+        {
+            "name": "宁夏",
+            "yesterday": "6",
+            "before": "6",
+            "addRate": "0.00"
+        },
+        {
             "name": "江西",
             "yesterday": "28",
             "before": "28",
+            "addRate": "0.00"
+        },
+        {
+            "name": "广东",
+            "yesterday": "22",
+            "before": "22",
+            "addRate": "0.00"
+        },
+        {
+            "name": "北京",
+            "yesterday": "14",
+            "before": "14",
             "addRate": "0.00"
         },
         {
@@ -1108,15 +1108,15 @@
             "addRate": "-87.50"
         },
         {
-            "name": "海南",
-            "yesterday": "0",
-            "before": "6",
-            "addRate": "-100.00"
-        },
-        {
             "name": "山西",
             "yesterday": "0",
             "before": "2",
+            "addRate": "-100.00"
+        },
+        {
+            "name": "海南",
+            "yesterday": "0",
+            "before": "6",
             "addRate": "-100.00"
         }
     ],
@@ -10242,6 +10242,48 @@
                     ]
                 },
                 {
+                    "name": "台湾",
+                    "today": {
+                        "confirm": 0,
+                        "suspect": 0,
+                        "dead": 0,
+                        "heal": 0,
+                        "isUpdated": false
+                    },
+                    "total": {
+                        "confirm": 18,
+                        "suspect": 0,
+                        "dead": 0,
+                        "heal": 1,
+                        "showRate": false,
+                        "showHeal": true,
+                        "deadRate": 0,
+                        "healRate": 5.56
+                    },
+                    "children": [
+                        {
+                            "name": "地区待确认",
+                            "today": {
+                                "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 18,
+                                "suspect": 0,
+                                "dead": 0,
+                                "heal": 1,
+                                "showRate": false,
+                                "showHeal": true,
+                                "deadRate": 0,
+                                "healRate": 5.56
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "青海",
                     "today": {
                         "confirm": 0,
@@ -10319,48 +10361,6 @@
                                 "showHeal": true,
                                 "deadRate": null,
                                 "healRate": null
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "台湾",
-                    "today": {
-                        "confirm": 0,
-                        "suspect": 0,
-                        "dead": 0,
-                        "heal": 0,
-                        "isUpdated": false
-                    },
-                    "total": {
-                        "confirm": 18,
-                        "suspect": 0,
-                        "dead": 0,
-                        "heal": 1,
-                        "showRate": false,
-                        "showHeal": true,
-                        "deadRate": 0,
-                        "healRate": 5.56
-                    },
-                    "children": [
-                        {
-                            "name": "地区待确认",
-                            "today": {
-                                "confirm": 0,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 18,
-                                "suspect": 0,
-                                "dead": 0,
-                                "heal": 1,
-                                "showRate": false,
-                                "showHeal": true,
-                                "deadRate": 0,
-                                "healRate": 5.56
                             }
                         }
                     ]
