@@ -110,7 +110,7 @@ var getPointStyle = function(f) {
   } else if(p.Confirmed < 500) {
     radiusSize = 23;
   } else {
-    radiusSize = p.Confirmed / 200;
+    radiusSize = p.Confirmed / 300;
     if(radiusSize < 27) {
       radiusSize = 27;
     }
