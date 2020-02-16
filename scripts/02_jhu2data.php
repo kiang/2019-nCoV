@@ -15,20 +15,18 @@ if(!file_exists($pointPath)) {
 $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
 $last = 0;
-foreach(glob($repo . '/daily_case_updates/*.csv') AS $csvFile) {
+foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
     if($p['filename'] === 'Notice') {
         continue;
     }
-    $parts1 = explode('_', $p['filename']);
-    $parts2 = explode('-', $parts1[0]);
-    $parts3 = array(substr($parts1[1], 0, 2), substr($parts1[1], 2, 2), '00');
-    $sheetTime = strtotime(implode('-', array($parts2[2], $parts2[0], $parts2[1])) . implode(':', $parts3));
+    $parts1 = explode('-', $p['filename']);
+    $sheetTime = strtotime(implode('-', array($parts1[2], $parts1[0], $parts1[1])));
 
     if($sheetTime > $last) {
         $last = $sheetTime;
     }
-    $pointFile = $pointPath . '/' . date('Ymd_His', $sheetTime) . '.json';
+    $pointFile = $pointPath . '/' . date('Ymd', $sheetTime) . '.json';
     $fc = array(
         'type' => 'FeatureCollection',
         'features' => array(),
@@ -76,5 +74,5 @@ foreach(glob($repo . '/daily_case_updates/*.csv') AS $csvFile) {
     file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
 }
 $meta = json_decode(file_get_contents(dirname(__DIR__) . '/data/meta.json'));
-$meta->points = date('Ymd_His', $last);
+$meta->points = date('Ymd', $last);
 file_put_contents(dirname(__DIR__) . '/data/meta.json', json_encode($meta, JSON_PRETTY_PRINT));
