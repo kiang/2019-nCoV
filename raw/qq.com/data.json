@@ -1,30 +1,30 @@
 {
-    "lastUpdateTime": "2020-02-21 08:58:19",
+    "lastUpdateTime": "2020-02-21 09:36:16",
     "chinaTotal": {
-        "confirm": 75115,
-        "heal": 18177,
+        "confirm": 75567,
+        "heal": 18277,
         "dead": 2239,
-        "nowConfirm": 54699,
-        "suspect": 4922,
-        "nowSevere": 11864
+        "nowConfirm": 55051,
+        "suspect": 5206,
+        "nowSevere": 11633
     },
     "chinaAdd": {
-        "confirm": 440,
-        "heal": 2009,
+        "confirm": 892,
+        "heal": 2109,
         "dead": 118,
-        "nowConfirm": -1687,
-        "suspect": 0,
-        "nowSevere": 0
+        "nowConfirm": -1335,
+        "suspect": 284,
+        "nowSevere": -231
     },
     "isShowAdd": true,
     "showAddSwitch": {
         "all": true,
         "confirm": true,
-        "suspect": false,
+        "suspect": true,
         "dead": true,
         "heal": true,
         "nowConfirm": true,
-        "nowSevere": false
+        "nowSevere": true
     },
     "chinaDayList": [
         {
@@ -444,6 +444,17 @@
             "deadRate": "2.8",
             "healRate": "21.7",
             "date": "02.19"
+        },
+        {
+            "confirm": 75567,
+            "suspect": 5206,
+            "dead": 2239,
+            "heal": 18277,
+            "nowConfirm": 55051,
+            "nowSevere": 11633,
+            "deadRate": "3.0",
+            "healRate": "24.2",
+            "date": "02.20"
         }
     ],
     "chinaDayAddList": [
@@ -725,6 +736,15 @@
             "deadRate": "28.8",
             "healRate": "446.4",
             "date": "02.19"
+        },
+        {
+            "confirm": 892,
+            "suspect": 1614,
+            "dead": 118,
+            "heal": 2109,
+            "deadRate": "13.2",
+            "healRate": "236.4",
+            "date": "02.20"
         }
     ],
     "dailyHistory": [
@@ -1423,6 +1443,30 @@
                 "deadRate": "2.84",
                 "healRate": "21.65"
             }
+        },
+        {
+            "date": "02.20",
+            "hubei": {
+                "dead": 2144,
+                "heal": 11788,
+                "nowConfirm": 48510,
+                "deadRate": "3.43",
+                "healRate": "18.88"
+            },
+            "notHubei": {
+                "dead": 95,
+                "heal": 6489,
+                "nowConfirm": 6541,
+                "deadRate": "0.72",
+                "healRate": "49.44"
+            },
+            "country": {
+                "dead": 2239,
+                "heal": 18277,
+                "nowConfirm": 55051,
+                "deadRate": "2.96",
+                "healRate": "24.19"
+            }
         }
     ],
     "wuhanDayList": [
@@ -1777,10 +1821,10 @@
         {
             "date": "02.18",
             "wuhan": {
-                "confirmAdd": 1660
+                "confirmAdd": 1600
             },
             "notWuhan": {
-                "confirmAdd": 86
+                "confirmAdd": 70
             },
             "notHubei": {
                 "confirmAdd": 56
@@ -1792,7 +1836,7 @@
                 "confirmAdd": 1660
             },
             "notWuhan": {
-                "confirmAdd": 74
+                "confirmAdd": 86
             },
             "notHubei": {
                 "confirmAdd": 50
@@ -1819,7 +1863,7 @@
                 "confirmAdd": 92
             },
             "notHubei": {
-                "confirmAdd": 27
+                "confirmAdd": 59
             }
         }
     ],
@@ -2009,6 +2053,12 @@
             "hubei": 349,
             "country": 399,
             "notHubei": 50
+        },
+        {
+            "date": "02.20",
+            "hubei": 411,
+            "country": 892,
+            "notHubei": 481
         }
     ],
     "dailyDeadRateHistory": [
@@ -2197,6 +2247,12 @@
             "hubeiRate": "3.27",
             "notHubeiRate": "0.73",
             "countryRate": "2.84"
+        },
+        {
+            "date": "02.20",
+            "hubeiRate": "3.43",
+            "notHubeiRate": "0.72",
+            "countryRate": "2.96"
         }
     ],
     "dailyHealRateHistory": [
@@ -2373,23 +2429,29 @@
             "hubeiRate": "16.66",
             "notHubeiRate": "46.12",
             "countryRate": "21.65"
+        },
+        {
+            "date": "02.20",
+            "hubeiRate": "18.88",
+            "notHubeiRate": "49.44",
+            "countryRate": "24.19"
         }
     ],
     "areaTree": [
         {
             "name": "中国",
             "today": {
-                "confirm": 440,
+                "confirm": 892,
                 "isUpdated": true
             },
             "total": {
-                "confirm": 75115,
-                "suspect": 4922,
+                "confirm": 75567,
+                "suspect": 5206,
                 "dead": 2239,
-                "deadRate": "2.98",
+                "deadRate": "2.96",
                 "showRate": false,
-                "heal": 18177,
-                "healRate": "24.20",
+                "heal": 18277,
+                "healRate": "24.19",
                 "showHeal": true
             },
             "children": [
@@ -2722,18 +2784,18 @@
                 {
                     "name": "广东",
                     "today": {
-                        "confirm": 0,
+                        "confirm": 1,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
-                        "confirm": 1332,
+                        "confirm": 1333,
                         "suspect": 0,
                         "dead": 5,
                         "deadRate": "0.38",
                         "showRate": false,
-                        "heal": 636,
-                        "healRate": "47.75",
+                        "heal": 664,
+                        "healRate": "49.81",
                         "showHeal": true
                     },
                     "children": [
@@ -2742,7 +2804,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 416,
@@ -2760,7 +2822,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 339,
@@ -2768,8 +2830,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 158,
-                                "healRate": "46.61",
+                                "heal": 173,
+                                "healRate": "51.03",
                                 "showHeal": true
                             }
                         },
@@ -2778,7 +2840,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 98,
@@ -2786,26 +2848,26 @@
                                 "dead": 1,
                                 "deadRate": "1.02",
                                 "showRate": false,
-                                "heal": 45,
-                                "healRate": "45.92",
+                                "heal": 49,
+                                "healRate": "50.00",
                                 "showHeal": false
                             }
                         },
                         {
                             "name": "东莞",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 92,
+                                "confirm": 93,
                                 "suspect": 0,
                                 "dead": 1,
-                                "deadRate": "1.09",
+                                "deadRate": "1.08",
                                 "showRate": false,
-                                "heal": 26,
-                                "healRate": "28.26",
+                                "heal": 27,
+                                "healRate": "29.03",
                                 "showHeal": true
                             }
                         },
@@ -2814,7 +2876,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 84,
@@ -2832,7 +2894,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 66,
@@ -2840,8 +2902,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 42,
-                                "healRate": "63.64",
+                                "heal": 43,
+                                "healRate": "65.15",
                                 "showHeal": false
                             }
                         },
@@ -2850,7 +2912,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 62,
@@ -2858,8 +2920,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 38,
-                                "healRate": "61.29",
+                                "heal": 41,
+                                "healRate": "66.13",
                                 "showHeal": false
                             }
                         },
@@ -2868,7 +2930,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 25,
@@ -2876,8 +2938,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 18,
-                                "healRate": "72.00",
+                                "heal": 20,
+                                "healRate": "80.00",
                                 "showHeal": false
                             }
                         },
@@ -2886,7 +2948,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 23,
@@ -2904,7 +2966,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 22,
@@ -2912,8 +2974,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 11,
-                                "healRate": "50.00",
+                                "heal": 12,
+                                "healRate": "54.55",
                                 "showHeal": false
                             }
                         },
@@ -2922,7 +2984,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 18,
@@ -2940,7 +3002,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 16,
@@ -2958,7 +3020,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 14,
@@ -2976,7 +3038,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 13,
@@ -2984,8 +3046,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 9,
-                                "healRate": "69.23",
+                                "heal": 10,
+                                "healRate": "76.92",
                                 "showHeal": false
                             }
                         },
@@ -2994,7 +3056,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 12,
@@ -3012,7 +3074,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 10,
@@ -3030,7 +3092,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 8,
@@ -3048,7 +3110,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 5,
@@ -3066,7 +3128,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 5,
@@ -3084,7 +3146,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 4,
@@ -3482,18 +3544,18 @@
                 {
                     "name": "浙江",
                     "today": {
-                        "confirm": 0,
+                        "confirm": 28,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
-                        "confirm": 1175,
+                        "confirm": 1203,
                         "suspect": 0,
                         "dead": 1,
-                        "deadRate": "0.09",
+                        "deadRate": "0.08",
                         "showRate": false,
-                        "heal": 609,
-                        "healRate": "51.83",
+                        "heal": 647,
+                        "healRate": "53.78",
                         "showHeal": true
                     },
                     "children": [
@@ -3502,7 +3564,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 504,
@@ -3510,8 +3572,8 @@
                                 "dead": 1,
                                 "deadRate": "0.20",
                                 "showRate": false,
-                                "heal": 228,
-                                "healRate": "45.24",
+                                "heal": 245,
+                                "healRate": "48.61",
                                 "showHeal": true
                             }
                         },
@@ -3520,7 +3582,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 169,
@@ -3528,26 +3590,26 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 108,
-                                "healRate": "63.91",
+                                "heal": 111,
+                                "healRate": "65.68",
                                 "showHeal": true
                             }
                         },
                         {
                             "name": "宁波",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 156,
+                                "confirm": 157,
                                 "suspect": 0,
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 91,
-                                "healRate": "58.33",
+                                "heal": 101,
+                                "healRate": "64.33",
                                 "showHeal": true
                             }
                         },
@@ -3556,7 +3618,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 146,
@@ -3564,8 +3626,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 74,
-                                "healRate": "50.68",
+                                "heal": 77,
+                                "healRate": "52.74",
                                 "showHeal": true
                             }
                         },
@@ -3574,7 +3636,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 55,
@@ -3582,8 +3644,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 33,
-                                "healRate": "60.00",
+                                "heal": 36,
+                                "healRate": "65.45",
                                 "showHeal": true
                             }
                         },
@@ -3592,7 +3654,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 45,
@@ -3600,8 +3662,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 20,
-                                "healRate": "44.44",
+                                "heal": 22,
+                                "healRate": "48.89",
                                 "showHeal": true
                             }
                         },
@@ -3610,7 +3672,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 42,
@@ -3624,20 +3686,20 @@
                             }
                         },
                         {
-                            "name": "衢州",
+                            "name": "省十里丰监狱",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 27,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 21,
+                                "confirm": 34,
                                 "suspect": 0,
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 10,
-                                "healRate": "47.62",
+                                "heal": 0,
+                                "healRate": "0.00",
                                 "showHeal": true
                             }
                         },
@@ -3646,7 +3708,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 17,
@@ -3660,11 +3722,29 @@
                             }
                         },
                         {
+                            "name": "衢州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 7,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 14,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 10,
+                                "healRate": "71.43",
+                                "showHeal": true
+                            }
+                        },
+                        {
                             "name": "湖州",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 10,
@@ -3682,7 +3762,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 10,
@@ -3700,18 +3780,18 @@
                 {
                     "name": "湖南",
                     "today": {
-                        "confirm": 0,
+                        "confirm": 1,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
-                        "confirm": 1010,
+                        "confirm": 1011,
                         "suspect": 0,
                         "dead": 4,
                         "deadRate": "0.40",
                         "showRate": false,
-                        "heal": 578,
-                        "healRate": "57.23",
+                        "heal": 638,
+                        "healRate": "63.11",
                         "showHeal": true
                     },
                     "children": [
@@ -3720,7 +3800,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 242,
@@ -3728,8 +3808,8 @@
                                 "dead": 2,
                                 "deadRate": "0.83",
                                 "showRate": false,
-                                "heal": 110,
-                                "healRate": "45.45",
+                                "heal": 125,
+                                "healRate": "51.65",
                                 "showHeal": true
                             }
                         },
@@ -3738,7 +3818,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 156,
@@ -3746,8 +3826,8 @@
                                 "dead": 1,
                                 "deadRate": "0.64",
                                 "showRate": false,
-                                "heal": 64,
-                                "healRate": "41.03",
+                                "heal": 72,
+                                "healRate": "46.15",
                                 "showHeal": true
                             }
                         },
@@ -3756,7 +3836,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 102,
@@ -3764,26 +3844,26 @@
                                 "dead": 1,
                                 "deadRate": "0.98",
                                 "showRate": false,
-                                "heal": 71,
-                                "healRate": "69.61",
+                                "heal": 78,
+                                "healRate": "76.47",
                                 "showHeal": true
                             }
                         },
                         {
                             "name": "常德",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 79,
+                                "confirm": 80,
                                 "suspect": 0,
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 49,
-                                "healRate": "62.03",
+                                "heal": 52,
+                                "healRate": "65.00",
                                 "showHeal": true
                             }
                         },
@@ -3792,7 +3872,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 78,
@@ -3800,8 +3880,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 40,
-                                "healRate": "51.28",
+                                "heal": 46,
+                                "healRate": "58.97",
                                 "showHeal": true
                             }
                         },
@@ -3810,7 +3890,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 76,
@@ -3818,8 +3898,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 51,
-                                "healRate": "67.11",
+                                "heal": 54,
+                                "healRate": "71.05",
                                 "showHeal": true
                             }
                         },
@@ -3828,7 +3908,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 59,
@@ -3836,8 +3916,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 35,
-                                "healRate": "59.32",
+                                "heal": 48,
+                                "healRate": "81.36",
                                 "showHeal": true
                             }
                         },
@@ -3846,7 +3926,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 48,
@@ -3854,8 +3934,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 32,
-                                "healRate": "66.67",
+                                "heal": 37,
+                                "healRate": "77.08",
                                 "showHeal": true
                             }
                         },
@@ -3864,7 +3944,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 43,
@@ -3882,7 +3962,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 40,
@@ -3900,7 +3980,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 39,
@@ -3918,7 +3998,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 35,
@@ -3936,7 +4016,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 8,
@@ -3954,7 +4034,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 5,
@@ -4282,7 +4362,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 934,
@@ -4290,8 +4370,8 @@
                         "dead": 1,
                         "deadRate": "0.11",
                         "showRate": false,
-                        "heal": 432,
-                        "healRate": "46.25",
+                        "heal": 489,
+                        "healRate": "52.36",
                         "showHeal": true
                     },
                     "children": [
@@ -4299,8 +4379,8 @@
                             "name": "南昌",
                             "today": {
                                 "confirm": 0,
-                                "confirmCuts": 1,
-                                "isUpdated": false
+                                "confirmCuts": 0,
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 229,
@@ -4308,8 +4388,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 133,
-                                "healRate": "58.08",
+                                "heal": 145,
+                                "healRate": "63.32",
                                 "showHeal": true
                             }
                         },
@@ -4318,7 +4398,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 130,
@@ -4326,8 +4406,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 68,
-                                "healRate": "52.31",
+                                "heal": 80,
+                                "healRate": "61.54",
                                 "showHeal": true
                             }
                         },
@@ -4336,7 +4416,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 123,
@@ -4344,8 +4424,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 55,
-                                "healRate": "44.72",
+                                "heal": 64,
+                                "healRate": "52.03",
                                 "showHeal": true
                             }
                         },
@@ -4354,7 +4434,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 118,
@@ -4362,8 +4442,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 44,
-                                "healRate": "37.29",
+                                "heal": 47,
+                                "healRate": "39.83",
                                 "showHeal": true
                             }
                         },
@@ -4372,7 +4452,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 106,
@@ -4380,8 +4460,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 42,
-                                "healRate": "39.62",
+                                "heal": 53,
+                                "healRate": "50.00",
                                 "showHeal": true
                             }
                         },
@@ -4390,7 +4470,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 76,
@@ -4398,8 +4478,8 @@
                                 "dead": 1,
                                 "deadRate": "1.32",
                                 "showRate": false,
-                                "heal": 28,
-                                "healRate": "36.84",
+                                "heal": 34,
+                                "healRate": "44.74",
                                 "showHeal": true
                             }
                         },
@@ -4408,7 +4488,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 72,
@@ -4416,8 +4496,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 35,
-                                "healRate": "48.61",
+                                "heal": 37,
+                                "healRate": "51.39",
                                 "showHeal": true
                             }
                         },
@@ -4426,7 +4506,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 33,
@@ -4434,8 +4514,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 9,
-                                "healRate": "27.27",
+                                "heal": 11,
+                                "healRate": "33.33",
                                 "showHeal": true
                             }
                         },
@@ -6956,24 +7036,6 @@
                             }
                         },
                         {
-                            "name": "嘉定",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 9,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 3,
-                                "healRate": "33.33",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "杨浦",
                             "today": {
                                 "confirm": 0,
@@ -6988,6 +7050,24 @@
                                 "showRate": false,
                                 "heal": 4,
                                 "healRate": "44.44",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "嘉定",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 9,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 3,
+                                "healRate": "33.33",
                                 "showHeal": true
                             }
                         },
@@ -7796,7 +7876,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 245,
@@ -7804,8 +7884,8 @@
                         "dead": 1,
                         "deadRate": "0.41",
                         "showRate": false,
-                        "heal": 105,
-                        "healRate": "42.86",
+                        "heal": 117,
+                        "healRate": "47.76",
                         "showHeal": true
                     },
                     "children": [
@@ -8030,7 +8110,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 0,
@@ -8038,7 +8118,7 @@
                                 "dead": 1,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 105,
+                                "heal": 117,
                                 "healRate": "0.00",
                                 "showHeal": false
                             }
@@ -8322,7 +8402,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 168,
@@ -8330,8 +8410,8 @@
                         "dead": 4,
                         "deadRate": "2.38",
                         "showRate": false,
-                        "heal": 84,
-                        "healRate": "50.00",
+                        "heal": 89,
+                        "healRate": "52.98",
                         "showHeal": true
                     },
                     "children": [
@@ -8340,7 +8420,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 54,
@@ -8348,8 +8428,8 @@
                                 "dead": 1,
                                 "deadRate": "1.85",
                                 "showRate": false,
-                                "heal": 22,
-                                "healRate": "40.74",
+                                "heal": 25,
+                                "healRate": "46.30",
                                 "showHeal": true
                             }
                         },
@@ -8444,24 +8524,6 @@
                             }
                         },
                         {
-                            "name": "琼海",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 6,
-                                "suspect": 0,
-                                "dead": 1,
-                                "deadRate": "16.67",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "66.67",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "临高县",
                             "today": {
                                 "confirm": 0,
@@ -8473,6 +8535,24 @@
                                 "suspect": 0,
                                 "dead": 0,
                                 "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 4,
+                                "healRate": "66.67",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "琼海",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 1,
+                                "deadRate": "16.67",
                                 "showRate": false,
                                 "heal": 4,
                                 "healRate": "66.67",
@@ -8494,6 +8574,24 @@
                                 "showRate": false,
                                 "heal": 1,
                                 "healRate": "25.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "东方",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 3,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 2,
+                                "healRate": "66.67",
                                 "showHeal": true
                             }
                         },
@@ -8552,29 +8650,11 @@
                             }
                         },
                         {
-                            "name": "东方",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 3,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 2,
-                                "healRate": "66.67",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "乐东",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 2,
@@ -8582,8 +8662,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 0,
-                                "healRate": "0.00",
+                                "heal": 2,
+                                "healRate": "100.00",
                                 "showHeal": true
                             }
                         },
@@ -8698,6 +8778,24 @@
                             }
                         },
                         {
+                            "name": "黔东南州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 10,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 5,
+                                "healRate": "50.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
                             "name": "铜仁",
                             "today": {
                                 "confirm": 0,
@@ -8730,24 +8828,6 @@
                                 "showRate": false,
                                 "heal": 6,
                                 "healRate": "60.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "黔东南州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 10,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 5,
-                                "healRate": "50.00",
                                 "showHeal": true
                             }
                         },
@@ -9320,7 +9400,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 121,
@@ -9328,8 +9408,8 @@
                         "dead": 1,
                         "deadRate": "0.83",
                         "showRate": false,
-                        "heal": 58,
-                        "healRate": "47.93",
+                        "heal": 61,
+                        "healRate": "50.41",
                         "showHeal": true
                     },
                     "children": [
@@ -9370,29 +9450,11 @@
                             }
                         },
                         {
-                            "name": "葫芦岛",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 12,
-                                "suspect": 0,
-                                "dead": 1,
-                                "deadRate": "8.33",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "33.33",
-                                "showHeal": false
-                            }
-                        },
-                        {
                             "name": "锦州",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 12,
@@ -9400,8 +9462,26 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 7,
-                                "healRate": "58.33",
+                                "heal": 8,
+                                "healRate": "66.67",
+                                "showHeal": false
+                            }
+                        },
+                        {
+                            "name": "葫芦岛",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 12,
+                                "suspect": 0,
+                                "dead": 1,
+                                "deadRate": "8.33",
+                                "showRate": false,
+                                "heal": 5,
+                                "healRate": "41.67",
                                 "showHeal": false
                             }
                         },
@@ -9410,7 +9490,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 11,
@@ -9418,8 +9498,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 4,
-                                "healRate": "36.36",
+                                "heal": 5,
+                                "healRate": "45.45",
                                 "showHeal": false
                             }
                         },
@@ -10260,24 +10340,6 @@
                     },
                     "children": [
                         {
-                            "name": "鄂尔多斯",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 11,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 5,
-                                "healRate": "45.45",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "包头",
                             "today": {
                                 "confirm": 0,
@@ -10292,6 +10354,24 @@
                                 "showRate": false,
                                 "heal": 2,
                                 "healRate": "18.18",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "鄂尔多斯",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 11,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 5,
+                                "healRate": "45.45",
                                 "showHeal": true
                             }
                         },
@@ -10368,24 +10448,6 @@
                             }
                         },
                         {
-                            "name": "通辽",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 7,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 0,
-                                "healRate": "0.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "呼和浩特",
                             "today": {
                                 "confirm": 0,
@@ -10400,6 +10462,24 @@
                                 "showRate": false,
                                 "heal": 2,
                                 "healRate": "28.57",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "通辽",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 7,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 0,
+                                "healRate": "0.00",
                                 "showHeal": true
                             }
                         },
@@ -10464,7 +10544,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 71,
@@ -10472,8 +10552,8 @@
                         "dead": 0,
                         "deadRate": "0.00",
                         "showRate": false,
-                        "heal": 42,
-                        "healRate": "59.15",
+                        "heal": 44,
+                        "healRate": "61.97",
                         "showHeal": true
                     },
                     "children": [
@@ -10482,7 +10562,7 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 33,
@@ -10490,8 +10570,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 25,
-                                "healRate": "75.76",
+                                "heal": 27,
+                                "healRate": "81.82",
                                 "showHeal": true
                             }
                         },
@@ -10590,7 +10670,7 @@
                 {
                     "name": "香港",
                     "today": {
-                        "confirm": 1,
+                        "confirm": 3,
                         "confirmCuts": 0,
                         "isUpdated": true
                     },
@@ -10608,7 +10688,7 @@
                         {
                             "name": "地区待确认",
                             "today": {
-                                "confirm": 1,
+                                "confirm": 3,
                                 "confirmCuts": 0,
                                 "isUpdated": true
                             },
@@ -10630,7 +10710,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 24,
@@ -10742,7 +10822,7 @@
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
-                        "isUpdated": false
+                        "isUpdated": true
                     },
                     "total": {
                         "confirm": 10,
