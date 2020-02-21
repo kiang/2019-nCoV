@@ -1,18 +1,18 @@
 {
-    "lastUpdateTime": "2020-02-21 22:54:42",
+    "lastUpdateTime": "2020-02-21 23:42:57",
     "chinaTotal": {
-        "confirm": 75571,
+        "confirm": 75997,
         "heal": 18411,
         "dead": 2239,
-        "nowConfirm": 54921,
+        "nowConfirm": 55347,
         "suspect": 5206,
         "nowSevere": 11633
     },
     "chinaAdd": {
-        "confirm": 896,
+        "confirm": 1322,
         "heal": 2243,
         "dead": 118,
-        "nowConfirm": -1465,
+        "nowConfirm": -1039,
         "suspect": 284,
         "nowSevere": -231
     },
@@ -446,14 +446,14 @@
             "date": "02.19"
         },
         {
-            "confirm": 75567,
+            "confirm": 75141,
             "suspect": 5206,
             "dead": 2239,
             "heal": 18277,
             "nowConfirm": 55051,
             "nowSevere": 11633,
             "deadRate": "3.0",
-            "healRate": "24.2",
+            "healRate": "24.3",
             "date": "02.20"
         }
     ],
@@ -1425,16 +1425,16 @@
             "hubei": {
                 "dead": 2029,
                 "heal": 10337,
-                "nowConfirm": 49665,
-                "deadRate": "3.27",
-                "healRate": "16.66"
+                "nowConfirm": 50091,
+                "deadRate": "3.25",
+                "healRate": "16.55"
             },
             "notHubei": {
                 "dead": 92,
                 "heal": 5831,
-                "nowConfirm": 6721,
-                "deadRate": "0.73",
-                "healRate": "46.12"
+                "nowConfirm": 6295,
+                "deadRate": "0.75",
+                "healRate": "47.72"
             },
             "country": {
                 "dead": 2121,
@@ -1449,23 +1449,23 @@
             "hubei": {
                 "dead": 2144,
                 "heal": 11788,
-                "nowConfirm": 48730,
-                "deadRate": "3.42",
-                "healRate": "18.81"
+                "nowConfirm": 49156,
+                "deadRate": "3.40",
+                "healRate": "18.69"
             },
             "notHubei": {
                 "dead": 95,
                 "heal": 6489,
-                "nowConfirm": 6321,
-                "deadRate": "0.74",
-                "healRate": "50.28"
+                "nowConfirm": 5895,
+                "deadRate": "0.79",
+                "healRate": "53.84"
             },
             "country": {
                 "dead": 2239,
                 "heal": 18277,
                 "nowConfirm": 55051,
-                "deadRate": "2.96",
-                "healRate": "24.19"
+                "deadRate": "2.98",
+                "healRate": "24.32"
             }
         }
     ],
@@ -1839,7 +1839,7 @@
                 "confirmAdd": 13
             },
             "notHubei": {
-                "confirmAdd": 50
+                "confirmAdd": -376
             }
         },
         {
@@ -2037,12 +2037,6 @@
             "notHubei": 58
         },
         {
-            "date": "02.19",
-            "hubei": 349,
-            "country": 399,
-            "notHubei": 50
-        },
-        {
             "date": "02.20",
             "hubei": 631,
             "country": 892,
@@ -2232,15 +2226,15 @@
         },
         {
             "date": "02.19",
-            "hubeiRate": "3.27",
-            "notHubeiRate": "0.73",
+            "hubeiRate": "3.25",
+            "notHubeiRate": "0.75",
             "countryRate": "2.84"
         },
         {
             "date": "02.20",
-            "hubeiRate": "3.42",
-            "notHubeiRate": "0.74",
-            "countryRate": "2.96"
+            "hubeiRate": "3.40",
+            "notHubeiRate": "0.79",
+            "countryRate": "2.98"
         }
     ],
     "dailyHealRateHistory": [
@@ -2414,32 +2408,32 @@
         },
         {
             "date": "02.19",
-            "hubeiRate": "16.66",
-            "notHubeiRate": "46.12",
+            "hubeiRate": "16.55",
+            "notHubeiRate": "47.72",
             "countryRate": "21.65"
         },
         {
             "date": "02.20",
-            "hubeiRate": "18.81",
-            "notHubeiRate": "50.28",
-            "countryRate": "24.19"
+            "hubeiRate": "18.69",
+            "notHubeiRate": "53.84",
+            "countryRate": "24.32"
         }
     ],
     "areaTree": [
         {
             "name": "中国",
             "today": {
-                "confirm": 896,
+                "confirm": 1322,
                 "isUpdated": true
             },
             "total": {
-                "confirm": 75571,
+                "confirm": 75997,
                 "suspect": 5206,
                 "dead": 2239,
-                "deadRate": "2.96",
+                "deadRate": "2.95",
                 "showRate": false,
                 "heal": 18411,
-                "healRate": "24.36",
+                "healRate": "24.23",
                 "showHeal": true
             },
             "children": [
@@ -2451,13 +2445,13 @@
                         "isUpdated": true
                     },
                     "total": {
-                        "confirm": 62662,
+                        "confirm": 63088,
                         "suspect": 0,
                         "dead": 2144,
-                        "deadRate": "3.42",
+                        "deadRate": "3.40",
                         "showRate": false,
                         "heal": 11788,
-                        "healRate": "18.81",
+                        "healRate": "18.69",
                         "showHeal": true
                     },
                     "children": [
@@ -2487,13 +2481,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 3346,
+                                "confirm": 3427,
                                 "suspect": 0,
                                 "dead": 94,
-                                "deadRate": "2.81",
+                                "deadRate": "2.74",
                                 "showRate": false,
                                 "heal": 771,
-                                "healRate": "23.04",
+                                "healRate": "22.50",
                                 "showHeal": true
                             }
                         },
@@ -2505,13 +2499,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 2856,
+                                "confirm": 2883,
                                 "suspect": 0,
                                 "dead": 90,
-                                "deadRate": "3.15",
+                                "deadRate": "3.12",
                                 "showRate": false,
                                 "heal": 1274,
-                                "healRate": "44.61",
+                                "healRate": "44.19",
                                 "showHeal": true
                             }
                         },
@@ -2523,13 +2517,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 1517,
+                                "confirm": 1560,
                                 "suspect": 0,
                                 "dead": 40,
-                                "deadRate": "2.64",
+                                "deadRate": "2.56",
                                 "showRate": false,
                                 "heal": 531,
-                                "healRate": "35.00",
+                                "healRate": "34.04",
                                 "showHeal": true
                             }
                         },
@@ -2541,13 +2535,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 1343,
+                                "confirm": 1373,
                                 "suspect": 0,
                                 "dead": 39,
-                                "deadRate": "2.90",
+                                "deadRate": "2.84",
                                 "showRate": false,
                                 "heal": 375,
-                                "healRate": "27.92",
+                                "healRate": "27.31",
                                 "showHeal": true
                             }
                         },
@@ -2559,13 +2553,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 1287,
+                                "confirm": 1292,
                                 "suspect": 0,
                                 "dead": 28,
-                                "deadRate": "2.18",
+                                "deadRate": "2.17",
                                 "showRate": false,
                                 "heal": 386,
-                                "healRate": "29.99",
+                                "healRate": "29.88",
                                 "showHeal": true
                             }
                         },
@@ -2577,13 +2571,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 1170,
+                                "confirm": 1171,
                                 "suspect": 0,
                                 "dead": 24,
                                 "deadRate": "2.05",
                                 "showRate": false,
                                 "heal": 343,
-                                "healRate": "29.32",
+                                "healRate": "29.29",
                                 "showHeal": true
                             }
                         },
@@ -2595,13 +2589,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 974,
+                                "confirm": 992,
                                 "suspect": 0,
                                 "dead": 27,
-                                "deadRate": "2.77",
+                                "deadRate": "2.72",
                                 "showRate": false,
                                 "heal": 339,
-                                "healRate": "34.80",
+                                "healRate": "34.17",
                                 "showHeal": true
                             }
                         },
@@ -2613,13 +2607,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 895,
+                                "confirm": 914,
                                 "suspect": 0,
                                 "dead": 28,
-                                "deadRate": "3.13",
+                                "deadRate": "3.06",
                                 "showRate": false,
                                 "heal": 250,
-                                "healRate": "27.93",
+                                "healRate": "27.35",
                                 "showHeal": true
                             }
                         },
@@ -2631,13 +2625,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 800,
+                                "confirm": 912,
                                 "suspect": 0,
                                 "dead": 37,
-                                "deadRate": "4.62",
+                                "deadRate": "4.06",
                                 "showRate": false,
                                 "heal": 229,
-                                "healRate": "28.62",
+                                "healRate": "25.11",
                                 "showHeal": true
                             }
                         },
@@ -2649,13 +2643,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 766,
+                                "confirm": 834,
                                 "suspect": 0,
                                 "dead": 10,
-                                "deadRate": "1.31",
+                                "deadRate": "1.20",
                                 "showRate": false,
                                 "heal": 313,
-                                "healRate": "40.86",
+                                "healRate": "37.53",
                                 "showHeal": true
                             }
                         },
@@ -2667,13 +2661,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 654,
+                                "confirm": 656,
                                 "suspect": 0,
                                 "dead": 2,
-                                "deadRate": "0.31",
+                                "deadRate": "0.30",
                                 "showRate": false,
                                 "heal": 209,
-                                "healRate": "31.96",
+                                "healRate": "31.86",
                                 "showHeal": true
                             }
                         },
@@ -2703,13 +2697,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 477,
+                                "confirm": 492,
                                 "suspect": 0,
                                 "dead": 12,
-                                "deadRate": "2.52",
+                                "deadRate": "2.44",
                                 "showRate": false,
                                 "heal": 165,
-                                "healRate": "34.59",
+                                "healRate": "33.54",
                                 "showHeal": true
                             }
                         },
@@ -2721,13 +2715,13 @@
                                 "isUpdated": true
                             },
                             "total": {
-                                "confirm": 245,
+                                "confirm": 250,
                                 "suspect": 0,
                                 "dead": 3,
-                                "deadRate": "1.22",
+                                "deadRate": "1.20",
                                 "showRate": false,
                                 "heal": 112,
-                                "healRate": "45.71",
+                                "healRate": "44.80",
                                 "showHeal": true
                             }
                         },
@@ -8876,224 +8870,6 @@
                     ]
                 },
                 {
-                    "name": "山西",
-                    "today": {
-                        "confirm": 1,
-                        "confirmCuts": 0,
-                        "isUpdated": true
-                    },
-                    "total": {
-                        "confirm": 132,
-                        "suspect": 0,
-                        "dead": 0,
-                        "deadRate": "0.00",
-                        "showRate": false,
-                        "heal": 76,
-                        "healRate": "57.58",
-                        "showHeal": true
-                    },
-                    "children": [
-                        {
-                            "name": "晋中",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 36,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 21,
-                                "healRate": "58.33",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "太原",
-                            "today": {
-                                "confirm": 1,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 20,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 12,
-                                "healRate": "60.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "运城",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 19,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 16,
-                                "healRate": "84.21",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "大同",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 12,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 6,
-                                "healRate": "50.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "晋城",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 10,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 3,
-                                "healRate": "30.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "长治",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 8,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 2,
-                                "healRate": "25.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "朔州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 8,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 3,
-                                "healRate": "37.50",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "忻州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 7,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "57.14",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "吕梁",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 6,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 6,
-                                "healRate": "100.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "阳泉",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 4,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 2,
-                                "healRate": "50.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "临汾",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 2,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 1,
-                                "healRate": "50.00",
-                                "showHeal": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "天津",
                     "today": {
                         "confirm": 2,
@@ -9396,6 +9172,224 @@
                                 "showRate": false,
                                 "heal": 3,
                                 "healRate": "0.00",
+                                "showHeal": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "山西",
+                    "today": {
+                        "confirm": 1,
+                        "confirmCuts": 0,
+                        "isUpdated": true
+                    },
+                    "total": {
+                        "confirm": 132,
+                        "suspect": 0,
+                        "dead": 0,
+                        "deadRate": "0.00",
+                        "showRate": false,
+                        "heal": 76,
+                        "healRate": "57.58",
+                        "showHeal": true
+                    },
+                    "children": [
+                        {
+                            "name": "晋中",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 36,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 21,
+                                "healRate": "58.33",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "太原",
+                            "today": {
+                                "confirm": 1,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 20,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 12,
+                                "healRate": "60.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "运城",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 19,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 16,
+                                "healRate": "84.21",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "大同",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 12,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 6,
+                                "healRate": "50.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "晋城",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 10,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 3,
+                                "healRate": "30.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "长治",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 8,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 2,
+                                "healRate": "25.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "朔州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 8,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 3,
+                                "healRate": "37.50",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "忻州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 7,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 4,
+                                "healRate": "57.14",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "吕梁",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 6,
+                                "healRate": "100.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "阳泉",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 4,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 2,
+                                "healRate": "50.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "临汾",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 2,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 1,
+                                "healRate": "50.00",
                                 "showHeal": true
                             }
                         }
