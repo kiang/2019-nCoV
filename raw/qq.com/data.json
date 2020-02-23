@@ -5,26 +5,26 @@
         "heal": 22936,
         "dead": 2445,
         "nowConfirm": 51660,
-        "suspect": 5365,
-        "nowSevere": 11477
+        "suspect": 4148,
+        "nowSevere": 10968
     },
     "chinaAdd": {
         "confirm": 649,
         "heal": 2263,
         "dead": 97,
         "nowConfirm": -1711,
-        "suspect": 0,
-        "nowSevere": 0
+        "suspect": -1217,
+        "nowSevere": -509
     },
     "isShowAdd": true,
     "showAddSwitch": {
         "all": true,
         "confirm": true,
-        "suspect": false,
+        "suspect": true,
         "dead": true,
         "heal": true,
         "nowConfirm": true,
-        "nowSevere": false
+        "nowSevere": true
     },
     "chinaDayList": [
         {
@@ -466,6 +466,17 @@
             "deadRate": "3.1",
             "healRate": "27.1",
             "date": "02.21"
+        },
+        {
+            "confirm": 77041,
+            "suspect": 4148,
+            "dead": 2445,
+            "heal": 22907,
+            "nowConfirm": 51689,
+            "nowSevere": 10968,
+            "deadRate": "3.2",
+            "healRate": "29.7",
+            "date": "02.22"
         }
     ],
     "chinaDayAddList": [
@@ -765,6 +776,15 @@
             "deadRate": "27.3",
             "healRate": "600.0",
             "date": "02.21"
+        },
+        {
+            "confirm": 649,
+            "suspect": 882,
+            "dead": 97,
+            "heal": 2235,
+            "deadRate": "14.9",
+            "healRate": "344.4",
+            "date": "02.22"
         }
     ],
     "dailyHistory": [
@@ -1511,6 +1531,30 @@
                 "deadRate": "3.07",
                 "healRate": "27.06"
             }
+        },
+        {
+            "date": "02.22",
+            "hubei": {
+                "dead": 2346,
+                "heal": 15299,
+                "nowConfirm": 46439,
+                "deadRate": "3.66",
+                "healRate": "23.87"
+            },
+            "notHubei": {
+                "dead": 99,
+                "heal": 7608,
+                "nowConfirm": 5250,
+                "deadRate": "0.76",
+                "healRate": "58.72"
+            },
+            "country": {
+                "dead": 2445,
+                "heal": 22907,
+                "nowConfirm": 51689,
+                "deadRate": "3.17",
+                "healRate": "29.73"
+            }
         }
     ],
     "wuhanDayList": [
@@ -1873,6 +1917,18 @@
             "notHubei": {
                 "confirmAdd": 33
             }
+        },
+        {
+            "date": "02.22",
+            "wuhan": {
+                "confirmAdd": 541
+            },
+            "notWuhan": {
+                "confirmAdd": 89
+            },
+            "notHubei": {
+                "confirmAdd": 19
+            }
         }
     ],
     "dailyNewAddHistory": [
@@ -2073,6 +2129,12 @@
             "hubei": 366,
             "country": 399,
             "notHubei": 33
+        },
+        {
+            "date": "02.22",
+            "hubei": 630,
+            "country": 649,
+            "notHubei": 19
         }
     ],
     "dailyDeadRateHistory": [
@@ -2273,6 +2335,12 @@
             "hubeiRate": "3.55",
             "notHubeiRate": "0.76",
             "countryRate": "3.07"
+        },
+        {
+            "date": "02.22",
+            "hubeiRate": "3.66",
+            "notHubeiRate": "0.76",
+            "countryRate": "3.17"
         }
     ],
     "dailyHealRateHistory": [
@@ -2461,6 +2529,12 @@
             "hubeiRate": "21.37",
             "notHubeiRate": "55.00",
             "countryRate": "27.06"
+        },
+        {
+            "date": "02.22",
+            "hubeiRate": "23.87",
+            "notHubeiRate": "58.72",
+            "countryRate": "29.73"
         }
     ],
     "areaTree": [
@@ -2472,7 +2546,7 @@
             },
             "total": {
                 "confirm": 77041,
-                "suspect": 5365,
+                "suspect": 4148,
                 "dead": 2445,
                 "deadRate": "3.17",
                 "showRate": false,
@@ -9694,206 +9768,6 @@
                     ]
                 },
                 {
-                    "name": "吉林",
-                    "today": {
-                        "confirm": 0,
-                        "confirmCuts": 0,
-                        "isUpdated": true
-                    },
-                    "total": {
-                        "confirm": 91,
-                        "suspect": 0,
-                        "dead": 1,
-                        "deadRate": "1.10",
-                        "showRate": false,
-                        "heal": 52,
-                        "healRate": "57.14",
-                        "showHeal": true
-                    },
-                    "children": [
-                        {
-                            "name": "长春",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 45,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 26,
-                                "healRate": "57.78",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "四平",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 15,
-                                "suspect": 0,
-                                "dead": 1,
-                                "deadRate": "6.67",
-                                "showRate": false,
-                                "heal": 9,
-                                "healRate": "60.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "辽源",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 7,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 1,
-                                "healRate": "14.29",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "公主岭",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 6,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 3,
-                                "healRate": "50.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "吉林",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 5,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 5,
-                                "healRate": "100.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "延边",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 5,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "80.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "通化",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 4,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 1,
-                                "healRate": "25.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "松原",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 2,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 2,
-                                "healRate": "100.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "梅河口市",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 1,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 1,
-                                "healRate": "100.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
-                            "name": "白城",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 1,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 0,
-                                "healRate": "0.00",
-                                "showHeal": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "甘肃",
                     "today": {
                         "confirm": 0,
@@ -10118,6 +9992,206 @@
                             },
                             "total": {
                                 "confirm": 0,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 0,
+                                "healRate": "0.00",
+                                "showHeal": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "吉林",
+                    "today": {
+                        "confirm": 0,
+                        "confirmCuts": 0,
+                        "isUpdated": true
+                    },
+                    "total": {
+                        "confirm": 91,
+                        "suspect": 0,
+                        "dead": 1,
+                        "deadRate": "1.10",
+                        "showRate": false,
+                        "heal": 52,
+                        "healRate": "57.14",
+                        "showHeal": true
+                    },
+                    "children": [
+                        {
+                            "name": "长春",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 45,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 26,
+                                "healRate": "57.78",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "四平",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 15,
+                                "suspect": 0,
+                                "dead": 1,
+                                "deadRate": "6.67",
+                                "showRate": false,
+                                "heal": 9,
+                                "healRate": "60.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "辽源",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 7,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 1,
+                                "healRate": "14.29",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "公主岭",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 3,
+                                "healRate": "50.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "吉林",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 5,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 5,
+                                "healRate": "100.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "延边",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 5,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 4,
+                                "healRate": "80.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "通化",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 4,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 1,
+                                "healRate": "25.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "松原",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 2,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 2,
+                                "healRate": "100.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "梅河口市",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 1,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 1,
+                                "healRate": "100.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "白城",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 1,
                                 "suspect": 0,
                                 "dead": 0,
                                 "deadRate": "0.00",
@@ -11400,104 +11474,24 @@
     ],
     "articleList": [
         {
-            "cmsId": "GDC2020022300228900",
-            "source": "push",
-            "media": "广东省卫健委",
-            "publish_time": "2020-02-23 09:10:02",
+            "cmsId": "20200222A0QUHS00",
+            "source": "manual",
+            "media": "澎湃新闻",
+            "publish_time": "2020-02-23 09:55:36",
             "can_use": 1,
-            "desc": "2月22日0时-24时，广东新增新冠肺炎确诊病例3例，新增死亡1例。目前全省累计确诊1342例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/GDC2020022300228900",
-            "title": "广东新增3例确诊病例 新增死亡1例"
+            "desc": "疫情还未过去，上海、广州、四川、江西、浙江等多地又现人从众现象，隔着屏幕看都紧张。只要疫情一天没结束，就不要出门扎堆凑热闹。",
+            "url": "https:\/\/view.inews.qq.com\/a\/20200222A0QUHS00",
+            "title": "疫情没结束，多地长队已经排起来了！"
         },
         {
-            "cmsId": "PJX2020022300227700",
-            "source": "push",
-            "media": "江西省卫健委",
-            "publish_time": "2020-02-23 09:06:50",
+            "cmsId": "20200222A0RHE100",
+            "source": "manual",
+            "media": "成都商报红星新闻",
+            "publish_time": "2020-02-23 09:50:36",
             "can_use": 1,
-            "desc": "2020年2月22日0-24时，江西省无新增新型冠状病毒肺炎确诊病例，新增出院病例67例。累计确诊934例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/PJX2020022300227700",
-            "title": "无新增确诊病例 江西累计确诊934例"
-        },
-        {
-            "cmsId": "CIG2020022300226400",
-            "source": "push",
-            "media": "青海省卫生健康委",
-            "publish_time": "2020-02-23 09:05:24",
-            "can_use": 1,
-            "desc": "2月22日0-24时，青海无新增新冠肺炎确诊病例和疑似病例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/CIG2020022300226400",
-            "title": "最新！青海无新增新冠肺炎确诊病例"
-        },
-        {
-            "cmsId": "PGZ2020022300216900",
-            "source": "push",
-            "media": "贵州省卫生健康委员会",
-            "publish_time": "2020-02-23 09:01:05",
-            "can_use": 1,
-            "desc": "2月22日12-24时，贵州新冠肺炎无新增确诊病例，全省累计报告146例，治愈出院91例，尚在接受医学观察162人。",
-            "url": "https:\/\/view.inews.qq.com\/a\/PGZ2020022300216900",
-            "title": "贵州无新增确诊病例 累计确诊146例"
-        },
-        {
-            "cmsId": "PHN2020022300216000",
-            "source": "push",
-            "media": "央视新闻客户端",
-            "publish_time": "2020-02-23 08:59:30",
-            "can_use": 1,
-            "desc": "2月22日0时-24时，海南省报告新型冠状病毒肺炎新增确诊病例0例，累计确诊168例。新增出院病例8例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/PHN2020022300216000",
-            "title": "无新增！海南累计确诊病例168例"
-        },
-        {
-            "cmsId": "BJC2020022300212400",
-            "source": "push",
-            "media": "首都健康",
-            "publish_time": "2020-02-23 08:50:59",
-            "can_use": 1,
-            "desc": "昨日0时至24时，北京市无新增新冠肺炎确诊病例。新增疑似病例35例，现有疑似病例100例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/BJC2020022300212400",
-            "title": "北京市昨日无新增新冠肺炎确诊病例"
-        },
-        {
-            "cmsId": "OMC2020022300210700",
-            "source": "push",
-            "media": "新疆维吾尔自治区卫生健康委员会",
-            "publish_time": "2020-02-23 08:49:36",
-            "can_use": 1,
-            "desc": "2月22日0-24时，新疆（含兵团）无新增新冠肺炎确诊病例，新增出院病例1例，累计报告确诊76例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/OMC2020022300210700",
-            "title": "新疆无新增确诊病例 新增出院病例1例"
-        },
-        {
-            "cmsId": "JSC2020022300189100",
-            "source": "push",
-            "media": "健康江苏",
-            "publish_time": "2020-02-23 08:47:52",
-            "can_use": 1,
-            "desc": "2月22日0-24时，江苏无新增新型冠状病毒肺炎确诊病例，新增出院病例24例，全省累计确诊631例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/JSC2020022300189100",
-            "title": "江苏无新增确诊病例 新增出院24例"
-        },
-        {
-            "cmsId": "CDC2020022300203600",
-            "source": "push",
-            "media": "健康四川官微",
-            "publish_time": "2020-02-23 08:47:19",
-            "can_use": 1,
-            "desc": "2月22日0-24时，四川新增0例新冠肺炎确诊病例，累计报告确诊病例526例，已治愈出院256人。",
-            "url": "https:\/\/view.inews.qq.com\/a\/CDC2020022300203600",
-            "title": "四川无新增新冠肺炎确诊病例"
-        },
-        {
-            "cmsId": "HNN2020022300206500",
-            "source": "push",
-            "media": "健康微湖南",
-            "publish_time": "2020-02-23 08:46:10",
-            "can_use": 1,
-            "desc": "2月22日0至24时，湖南新增新冠肺炎确诊病例3例，累计报告1016例，新增重症病例1例，新增出院病例35例。",
-            "url": "https:\/\/view.inews.qq.com\/a\/HNN2020022300206500",
-            "title": "湖南新增3例确诊病例 累计1016例"
+            "desc": "成都市发布《通知》，明确提出，党政一把手负主责，对所属员工实现全时段管理，要求员工疫情期间实行“两点一线”上下班模式，并减少不必要的聚集。",
+            "url": "https:\/\/view.inews.qq.com\/a\/20200222A0RHE100",
+            "title": "成都要求对所属员工全时段管理 疫情期间请实行“两点一线”上下班模式"
         }
     ]
 }
