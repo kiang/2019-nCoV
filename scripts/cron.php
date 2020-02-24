@@ -12,6 +12,8 @@ exec("php -q {$rootPath}/scripts/02_jhu2data.php");
 
 exec("php -q {$rootPath}/scripts/01_fetch_qq.php");
 
+exec("php -q {$rootPath}/scripts/01_fetch_tw.php");
+
 exec("cd {$rootPath} && /usr/bin/git add -A");
 
 exec("cd {$rootPath} && /usr/bin/git commit --author 'auto commit <noreply@localhost>' -m 'auto update @ {$now}'");
