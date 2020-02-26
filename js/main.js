@@ -130,8 +130,8 @@ var getPointStyle = function(f) {
 }
 
 var appView = new ol.View({
-  center: ol.proj.fromLonLat([114.2600995, 30.6165888]),
-  zoom: 6
+  center: ol.proj.fromLonLat([120.9820179, 23.9739374]),
+  zoom: 7
 });
 
 var raster = new ol.layer.Tile({
@@ -141,12 +141,12 @@ var sourcePool = {};
 
 sourcePool['1'] = new ol.source.Vector({
   url: 'json/adm1.json',
-  format: new ol.format.GeoJSON()
+  format: new ol.format.TopoJSON()
 });
 
 sourcePool['2'] = new ol.source.Vector({
   url: 'json/adm2.json',
-  format: new ol.format.GeoJSON()
+  format: new ol.format.TopoJSON()
 });
 
 var currentAdm = '2';
