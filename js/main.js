@@ -15,23 +15,13 @@ for (var z = 0; z < 20; ++z) {
 
 var dataPool = {};
 $.getJSON('data/meta.json', {}, function(c) {
+  $('#Confirmed').html(c.Confirmed);
+  $('#Recovered').html(c.Recovered);
+  $('#Deaths').html(c.Deaths);
   var target = c.end.toString();
   var targetFile = 'data/china/' + target.substring(0, 4) + '/' + target + '.json';
   $.getJSON(targetFile, {}, function(d) {
     dataPool = d;
-    var counter = false;
-    for(k in dataPool['adm1']) {
-      if(false !== counter) {
-        for(j in counter) {
-          counter[j] += dataPool['adm1'][k][j];
-        }
-      } else {
-        counter = dataPool['adm1'][k];
-      }
-    }
-    for(k in counter) {
-      $('#' + k).html(counter[k]);
-    }
     china.setSource(sourcePool[currentAdm]);
   });
 
