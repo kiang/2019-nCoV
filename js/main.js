@@ -237,11 +237,19 @@ map.on('singleclick', function(evt) {
   var message = '';
   map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
     var p = feature.getProperties();
+    if(false !== lastFeature) {
+      var lastP = lastFeature.getProperties();
+      if(lastP.ADM1_ZH) {
+        lastFeature.setStyle(getChinaStyle(lastFeature));
+        lastFeature = false;
+      } else if(lastP.COUNTYID) {
+        lastFeature.setStyle(getTaiwanStyle(lastFeature));
+        lastFeature = false;
+      }
+    }
     if(p.ADM1_ZH) {
       message += '<table class="table table-dark">';
       message += '<tbody>';
-      
-      var dataPoolKey = '';
       if(currentAdm == '2') {
         if(dataPool['adm2'][p.ADM2_PCODE]) {
           message += '<tr><th scope="row">區域 Area</th><td>' + p.ADM1_ZH + p.ADM2_ZH + '</td></tr>';
@@ -265,9 +273,6 @@ map.on('singleclick', function(evt) {
       message += '</tbody></table>';
       pointClicked = true;
 
-      if(false !== lastFeature) {
-        lastFeature.setStyle(getChinaStyle(lastFeature));
-      }
       var theStyle = styleLv[p.lv].clone();
       if(currentAdm == '2') {
         theStyle.getText().setText(p.ADM1_ZH + p.ADM2_ZH + '(' + p.confirmedCount + ')');
@@ -307,6 +312,12 @@ map.on('singleclick', function(evt) {
       message += '<tr><th scope="row">資料來源 Source</th><td><a href="https://nidss.cdc.gov.tw/ch/NIDSS_DiseaseMap.aspx?dc=1&dt=5&disease=19cov" target="_blank">傳染病統計資料查詢系統</a></td></tr>';
       message += '</tbody></table>';
       sidebarTitle.innerHTML = messageTitle;
+
+      var theStyle = styleLv[p.lv].clone();
+      theStyle.getText().setText(p.COUNTYNAME + '(' + p.confirmedCount + ')');
+      theStyle.setStroke(clickStroke);
+      feature.setStyle(theStyle);
+      lastFeature = feature;
     }
     if(p.Confirmed) {
       if(p['Last Update (UTC)']) {
