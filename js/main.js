@@ -32,7 +32,7 @@ $.getJSON('data/meta.json', {}, function(c) {
     for(k in counter) {
       $('#' + k).html(counter[k]);
     }
-    city.setSource(sourcePool[currentAdm]);
+    china.setSource(sourcePool[currentAdm]);
   });
 
   var pointSource = new ol.source.Vector({
@@ -42,7 +42,47 @@ $.getJSON('data/meta.json', {}, function(c) {
   points.setSource(pointSource);
 });
 
-var getCityStyle = function(f) {
+var taiwanData = {};
+var taiwanCode = {
+  '台北市': 'A',
+  '台中市': 'B',
+  '基隆市': 'C',
+  '台南市': 'D',
+  '高雄市': 'E',
+  '新北市': 'F',
+  '宜蘭縣': 'G',
+  '桃園市': 'H',
+  '嘉義市': 'I',
+  '新竹縣': 'J',
+  '苗栗縣': 'K',
+  '南投縣': 'M',
+  '彰化縣': 'N',
+  '新竹市': 'O',
+  '雲林縣': 'P',
+  '嘉義縣': 'Q',
+  '屏東縣': 'T',
+  '花蓮縣': 'U',
+  '台東縣': 'V',
+  '金門縣': 'W',
+  '澎湖縣': 'X',
+  '連江縣': 'Z'
+};
+$.getJSON('raw/taiwan/Weekly_Age_County_Gender_19CoV.json', {}, function(c) {
+  for(k in c) {
+    var code = taiwanCode[c[k].縣市];
+    if(!taiwanData[code]) {
+      taiwanData[code] = {
+        count: 0,
+        cases: []
+      }
+    }
+    taiwanData[code]['count'] += parseInt(c[k].確定病例數);
+    taiwanData[code].cases.push(c[k]);
+  }
+  taiwan.setSource(sourceTaiwan);
+});
+
+var getChinaStyle = function(f) {
   var p = f.getProperties();
   var codeKey = 'ADM' + currentAdm + '_PCODE';
   var code = p[codeKey];
@@ -85,6 +125,32 @@ var getCityStyle = function(f) {
     theStyle = styleLv[lv].clone();
     theStyle.getText().setText(p.ADM1_ZH + '(' + confirmedCount + ')');
   }
+  f.setProperties({
+    'lv': lv,
+    'confirmedCount': confirmedCount
+  });
+  return theStyle;
+}
+
+var getTaiwanStyle = function(f) {
+  var p = f.getProperties();
+  var lv = 'tw_lv1';
+  var theStyle;
+  var confirmedCount = 0;
+  if(taiwanData[p.COUNTYID]) {
+    confirmedCount = taiwanData[p.COUNTYID].count;
+    if(confirmedCount > 3) {
+      lv = 'tw_lv5';
+    } else if(confirmedCount > 2) {
+      lv = 'tw_lv4';
+    } else if(confirmedCount > 1) {
+      lv = 'tw_lv3';
+    } else if(confirmedCount > 0) {
+      lv = 'tw_lv2';
+    }
+  }
+  theStyle = styleLv[lv].clone();
+  theStyle.getText().setText(p.COUNTYNAME + '(' + confirmedCount + ')');
   f.setProperties({
     'lv': lv,
     'confirmedCount': confirmedCount
@@ -151,16 +217,24 @@ sourcePool['2'] = new ol.source.Vector({
 
 var currentAdm = '2';
 
-var city = new ol.layer.Vector({
+var china = new ol.layer.Vector({
   source: null,
-  style: getCityStyle
+  style: getChinaStyle
+});
+var sourceTaiwan = new ol.source.Vector({
+  url: 'json/taiwan.json',
+  format: new ol.format.TopoJSON()
+});
+var taiwan = new ol.layer.Vector({
+  source: null,
+  style: getTaiwanStyle
 });
 var points = new ol.layer.Vector({
   source: null,
   style: getPointStyle
 });
 var map = new ol.Map({
-  layers: [raster, city, points],
+  layers: [raster, china, taiwan, points],
   target: 'map',
   view: appView
 });
@@ -202,7 +276,7 @@ map.on('singleclick', function(evt) {
       pointClicked = true;
 
       if(false !== lastFeature) {
-        lastFeature.setStyle(getCityStyle(lastFeature));
+        lastFeature.setStyle(getChinaStyle(lastFeature));
       }
       var theStyle = styleLv[p.lv].clone();
       if(currentAdm == '2') {
@@ -213,6 +287,36 @@ map.on('singleclick', function(evt) {
       theStyle.setStroke(clickStroke);
       feature.setStyle(theStyle);
       lastFeature = feature;
+    } else if(p.COUNTYID) {
+      var messageTitle = 'Taiwan - ' + p.COUNTYNAME + ' ' + p.COUNTYENG;
+      message += '<table class="table table-dark">';
+      message += '<tbody>';
+      message += '<tr><th scope="row">區域 Area</th><td>' + messageTitle + '</td></tr>';
+      message += '<tr><th scope="row">確診 Confirmed</th><td>' + p.confirmedCount + '</td></tr>';
+      if(taiwanData[p.COUNTYID]) {
+        message += '<tr><td colspan="2"><ul>';
+        for(k in taiwanData[p.COUNTYID].cases) {
+          var caseText = taiwanData[p.COUNTYID].cases[k]['診斷年份'] + '年';
+          caseText += '第' + taiwanData[p.COUNTYID].cases[k]['診斷週別'] + '週';
+          caseText += '確診' + taiwanData[p.COUNTYID].cases[k]['確定病例數'] + '名';
+          if(taiwanData[p.COUNTYID].cases[k]['性別'] === 'F') {
+            caseText += '女性，';
+          } else {
+            caseText += '男性，';
+          }
+          caseText += taiwanData[p.COUNTYID].cases[k]['年齡層'] + '歲，';
+          if(taiwanData[p.COUNTYID].cases[k]['是否為境外移入'] === '是') {
+            caseText += '境外移入';
+          } else {
+            caseText += '境內感染';
+          }
+          message += '<li>' + caseText + '</li>';
+        }
+        message += '</ul></td></tr>';  
+      }
+      message += '<tr><th scope="row">資料來源 Source</th><td><a href="https://nidss.cdc.gov.tw/ch/NIDSS_DiseaseMap.aspx?dc=1&dt=5&disease=19cov" target="_blank">傳染病統計資料查詢系統</a></td></tr>';
+      message += '</tbody></table>';
+      sidebarTitle.innerHTML = messageTitle;
     }
     if(p.Confirmed) {
       if(p['Last Update (UTC)']) {
@@ -292,10 +396,45 @@ styleLv['lv5'] = new ol.style.Style({
     color: 'rgba(115,25,25,0.5)'
   })
 });
+styleLv['tw_lv1'] = new ol.style.Style({
+  stroke: lvStroke,
+  text: lvText,
+  fill: new ol.style.Fill({
+    color: 'rgba(0,102,0,0.7)'
+  })
+});
+styleLv['tw_lv2'] = new ol.style.Style({
+  stroke: lvStroke,
+  text: lvText,
+  fill: new ol.style.Fill({
+    color: 'rgba(153,204,0,0.7)'
+  })
+});
+styleLv['tw_lv3'] = new ol.style.Style({
+  stroke: lvStroke,
+  text: lvText,
+  fill: new ol.style.Fill({
+    color: 'rgba(255,255,118,0.7)'
+  })
+});
+styleLv['tw_lv4'] = new ol.style.Style({
+  stroke: lvStroke,
+  text: lvText,
+  fill: new ol.style.Fill({
+    color: 'rgba(255,153,0,0.7)'
+  })
+});
+styleLv['tw_lv5'] = new ol.style.Style({
+  stroke: lvStroke,
+  text: lvText,
+  fill: new ol.style.Fill({
+    color: 'rgba(204,51,51,0.7)'
+  })
+});
 
 $('#btnAdm1').click(function() {
   currentAdm = '1';
-  city.setSource(sourcePool[currentAdm]);
+  china.setSource(sourcePool[currentAdm]);
   sidebar.close();
   $('a.btn-adm').each(function(k, obj) {
     if($(obj).attr('id') === 'btnAdm1') {
@@ -311,7 +450,7 @@ $('#btnAdm1').click(function() {
 
 $('#btnAdm2').click(function() {
   currentAdm = '2';
-  city.setSource(sourcePool[currentAdm]);
+  china.setSource(sourcePool[currentAdm]);
   sidebar.close();
   $('a.btn-adm').each(function(k, obj) {
     if($(obj).attr('id') === 'btnAdm2') {
