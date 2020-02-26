@@ -1,7 +1,7 @@
 <?php
-$geojson = json_decode(file_get_contents(dirname(__DIR__) . '/json/adm2.json'), true);
+$topojson = json_decode(file_get_contents(dirname(__DIR__) . '/json/adm2.json'), true);
 $ref = array();
-foreach($geojson['features'] AS $f) {
+foreach($topojson['objects']['adm2']['geometries'] AS $f) {
     $name1 = $f['properties']['ADM1_ZH'];
     $name2 = $f['properties']['ADM2_ZH'];
     if(!isset($ref[$name1])) {
