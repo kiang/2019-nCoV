@@ -15,6 +15,7 @@ if(!file_exists($pointPath)) {
 $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
 $last = 0;
+$lastTotal = array();
 foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
     if($p['filename'] === 'Notice') {
@@ -23,9 +24,6 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
     $parts1 = explode('-', $p['filename']);
     $sheetTime = strtotime(implode('-', array($parts1[2], $parts1[0], $parts1[1])));
 
-    if($sheetTime > $last) {
-        $last = $sheetTime;
-    }
     $pointFile = $pointPath . '/' . date('Ymd', $sheetTime) . '.json';
     $fc = array(
         'type' => 'FeatureCollection',
@@ -36,8 +34,19 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
     if('efbbbf' === bin2hex(substr($head[0], 0, 3))) {
         $head[0] = substr($head[0], 3);
     }
+    $currentTotal = array(
+        'Confirmed' => 0,
+        'Recovered' => 0,
+        'Deaths' => 0,
+    );
     while($line = fgetcsv($fh, 2048)) {
         $data = array_combine($head, $line);
+        $data['Confirmed'] = intval($data['Confirmed']);
+        $data['Recovered'] = intval($data['Recovered']);
+        $data['Deaths'] = intval($data['Deaths']);
+        $currentTotal['Confirmed'] += $data['Confirmed'];
+        $currentTotal['Recovered'] += $data['Recovered'];
+        $currentTotal['Deaths'] += $data['Deaths'];
         if(isset($data['Country'])) {
             $data['Country/Region'] = $data['Country'];
             unset($data['Country']);
@@ -72,7 +81,15 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
         }
     }
     file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
+
+    if($sheetTime > $last) {
+        $last = $sheetTime;
+        $lastTotal = $currentTotal;
+    }
 }
-$meta = json_decode(file_get_contents(dirname(__DIR__) . '/data/meta.json'));
-$meta->points = date('Ymd', $last);
+$meta = json_decode(file_get_contents(dirname(__DIR__) . '/data/meta.json'), true);
+$meta['points'] = date('Ymd', $last);
+foreach($lastTotal AS $k => $v) {
+    $meta[$k] = $v;
+}
 file_put_contents(dirname(__DIR__) . '/data/meta.json', json_encode($meta, JSON_PRETTY_PRINT));
