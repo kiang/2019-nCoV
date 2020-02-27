@@ -1,24 +1,24 @@
 {
-    "lastUpdateTime": "2020-02-27 22:08:19",
+    "lastUpdateTime": "2020-02-27 23:40:28",
     "chinaTotal": {
-        "confirm": 78631,
-        "heal": 32598,
+        "confirm": 78632,
+        "heal": 32604,
         "dead": 2747,
-        "nowConfirm": 43286,
+        "nowConfirm": 43281,
         "suspect": 2358,
         "nowSevere": 8346
     },
     "chinaAdd": {
-        "confirm": 441,
-        "heal": 2823,
+        "confirm": 442,
+        "heal": 2829,
         "dead": 29,
-        "nowConfirm": -2411,
+        "nowConfirm": -2416,
         "suspect": -133,
         "nowSevere": -406
     },
-    "isShowAdd": true,
+    "isShowAdd": false,
     "showAddSwitch": {
-        "all": true,
+        "all": false,
         "confirm": true,
         "suspect": true,
         "dead": true,
@@ -30,16 +30,16 @@
         {
             "name": "中国",
             "today": {
-                "confirm": 441,
+                "confirm": 442,
                 "isUpdated": true
             },
             "total": {
-                "confirm": 78631,
+                "confirm": 78632,
                 "suspect": 2358,
                 "dead": 2747,
                 "deadRate": "3.49",
                 "showRate": false,
-                "heal": 32598,
+                "heal": 32604,
                 "healRate": "41.46",
                 "showHeal": true
             },
@@ -4625,7 +4625,7 @@
                             }
                         },
                         {
-                            "name": "嘉定",
+                            "name": "奉贤",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -4637,8 +4637,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 6,
-                                "healRate": "66.67",
+                                "heal": 8,
+                                "healRate": "88.89",
                                 "showHeal": true
                             }
                         },
@@ -4661,7 +4661,7 @@
                             }
                         },
                         {
-                            "name": "奉贤",
+                            "name": "嘉定",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -4673,8 +4673,8 @@
                                 "dead": 0,
                                 "deadRate": "0.00",
                                 "showRate": false,
-                                "heal": 8,
-                                "healRate": "88.89",
+                                "heal": 6,
+                                "healRate": "66.67",
                                 "showHeal": true
                             }
                         },
@@ -4697,24 +4697,6 @@
                             }
                         },
                         {
-                            "name": "黄浦",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 6,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "66.67",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "青浦",
                             "today": {
                                 "confirm": 0,
@@ -4733,11 +4715,29 @@
                             }
                         },
                         {
-                            "name": "金山",
+                            "name": "黄浦",
                             "today": {
-                                "confirm": 1,
+                                "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": true
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 4,
+                                "healRate": "66.67",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "崇明",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
                             },
                             "total": {
                                 "confirm": 4,
@@ -4751,11 +4751,11 @@
                             }
                         },
                         {
-                            "name": "崇明",
+                            "name": "金山",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 4,
@@ -6479,18 +6479,18 @@
                 {
                     "name": "天津",
                     "today": {
-                        "confirm": 0,
+                        "confirm": 1,
                         "confirmCuts": 0,
                         "isUpdated": true
                     },
                     "total": {
-                        "confirm": 135,
+                        "confirm": 136,
                         "suspect": 0,
                         "dead": 3,
-                        "deadRate": "2.22",
+                        "deadRate": "2.21",
                         "showRate": false,
-                        "heal": 96,
-                        "healRate": "71.11",
+                        "heal": 102,
+                        "healRate": "75.00",
                         "showHeal": true
                     },
                     "children": [
@@ -6567,24 +6567,6 @@
                             }
                         },
                         {
-                            "name": "外地来津",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 6,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 5,
-                                "healRate": "83.33",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "北辰区",
                             "today": {
                                 "confirm": 0,
@@ -6621,7 +6603,43 @@
                             }
                         },
                         {
+                            "name": "外地来津",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 6,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 5,
+                                "healRate": "83.33",
+                                "showHeal": true
+                            }
+                        },
+                        {
                             "name": "河西区",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "confirm": 4,
+                                "suspect": 0,
+                                "dead": 0,
+                                "deadRate": "0.00",
+                                "showRate": false,
+                                "heal": 4,
+                                "healRate": "100.00",
+                                "showHeal": true
+                            }
+                        },
+                        {
+                            "name": "西青区",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -6675,24 +6693,6 @@
                             }
                         },
                         {
-                            "name": "西青区",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "confirm": 4,
-                                "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
-                                "showRate": false,
-                                "heal": 4,
-                                "healRate": "100.00",
-                                "showHeal": true
-                            }
-                        },
-                        {
                             "name": "滨海新区",
                             "today": {
                                 "confirm": 0,
@@ -6711,7 +6711,7 @@
                             }
                         },
                         {
-                            "name": "武清区",
+                            "name": "红桥区",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -6729,7 +6729,7 @@
                             }
                         },
                         {
-                            "name": "红桥区",
+                            "name": "武清区",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -6767,18 +6767,18 @@
                         {
                             "name": "地区待确认",
                             "today": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
-                                "confirm": 0,
+                                "confirm": 1,
                                 "suspect": 0,
                                 "dead": 3,
-                                "deadRate": "0.00",
+                                "deadRate": "300.00",
                                 "showRate": false,
-                                "heal": 0,
-                                "healRate": "0.00",
+                                "heal": 6,
+                                "healRate": "600.00",
                                 "showHeal": true
                             }
                         }
@@ -8757,23 +8757,6 @@
             }
         },
         {
-            "name": "西班牙",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 13,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 2,
-                "healRate": "15.38",
-                "showHeal": true
-            }
-        },
-        {
             "name": "阿联酋",
             "today": {
                 "confirm": 0,
@@ -8787,6 +8770,23 @@
                 "showRate": false,
                 "heal": 4,
                 "healRate": "30.77",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "西班牙",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 13,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 2,
+                "healRate": "15.38",
                 "showHeal": true
             }
         },
@@ -8842,6 +8842,23 @@
             }
         },
         {
+            "name": "阿曼",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 5,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 0,
+                "healRate": "0.00",
+                "showHeal": true
+            }
+        },
+        {
             "name": "俄罗斯",
             "today": {
                 "confirm": 0,
@@ -8855,23 +8872,6 @@
                 "showRate": false,
                 "heal": 2,
                 "healRate": "40.00",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "阿曼",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 4,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
                 "showHeal": true
             }
         },
@@ -8893,7 +8893,7 @@
             }
         },
         {
-            "name": "克罗地亚",
+            "name": "希腊",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -8910,41 +8910,7 @@
             }
         },
         {
-            "name": "菲律宾",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 3,
-                "suspect": 0,
-                "dead": 1,
-                "deadRate": "33.33",
-                "showRate": false,
-                "heal": 1,
-                "healRate": "33.33",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "印度",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 3,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 3,
-                "healRate": "100.00",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "希腊",
+            "name": "克罗地亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -8984,6 +8950,57 @@
                 "isUpdated": false
             },
             "total": {
+                "confirm": 3,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 0,
+                "healRate": "0.00",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "印度",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 3,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 3,
+                "healRate": "100.00",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "菲律宾",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 3,
+                "suspect": 0,
+                "dead": 1,
+                "deadRate": "33.33",
+                "showRate": false,
+                "heal": 1,
+                "healRate": "33.33",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "瑞典",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
                 "confirm": 2,
                 "suspect": 0,
                 "dead": 0,
@@ -9012,13 +9029,13 @@
             }
         },
         {
-            "name": "瑞典",
+            "name": "罗马尼亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
             },
             "total": {
-                "confirm": 2,
+                "confirm": 1,
                 "suspect": 0,
                 "dead": 0,
                 "deadRate": "0.00",
@@ -9029,7 +9046,7 @@
             }
         },
         {
-            "name": "爱沙尼亚",
+            "name": "阿尔及利亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9063,24 +9080,7 @@
             }
         },
         {
-            "name": "比利时",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 1,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 1,
-                "healRate": "100.00",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "巴西",
+            "name": "格鲁吉亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9114,7 +9114,7 @@
             }
         },
         {
-            "name": "罗马尼亚",
+            "name": "巴西",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9148,7 +9148,7 @@
             }
         },
         {
-            "name": "格鲁吉亚",
+            "name": "挪威",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9199,7 +9199,7 @@
             }
         },
         {
-            "name": "挪威",
+            "name": "爱沙尼亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9233,7 +9233,7 @@
             }
         },
         {
-            "name": "阿尔及利亚",
+            "name": "比利时",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9244,8 +9244,8 @@
                 "dead": 0,
                 "deadRate": "0.00",
                 "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
+                "heal": 1,
+                "healRate": "100.00",
                 "showHeal": true
             }
         }
