@@ -1,5 +1,5 @@
 {
-    "lastUpdateTime": "2020-02-27 15:37:17",
+    "lastUpdateTime": "2020-02-27 16:52:42",
     "chinaTotal": {
         "confirm": 78630,
         "heal": 32595,
@@ -899,13 +899,13 @@
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
-                                "isUpdated": false
+                                "isUpdated": true
                             },
                             "total": {
                                 "confirm": 76,
                                 "suspect": 0,
-                                "dead": 0,
-                                "deadRate": "0.00",
+                                "dead": 1,
+                                "deadRate": "1.32",
                                 "showRate": false,
                                 "heal": 16,
                                 "healRate": "21.05",
@@ -1138,7 +1138,7 @@
                             "total": {
                                 "confirm": 0,
                                 "suspect": 0,
-                                "dead": 3,
+                                "dead": 2,
                                 "deadRate": "0.00",
                                 "showRate": false,
                                 "heal": 872,
@@ -7457,44 +7457,6 @@
                     ]
                 },
                 {
-                    "name": "香港",
-                    "today": {
-                        "confirm": 6,
-                        "confirmCuts": 0,
-                        "isUpdated": true
-                    },
-                    "total": {
-                        "confirm": 91,
-                        "suspect": 0,
-                        "dead": 2,
-                        "deadRate": "2.20",
-                        "showRate": false,
-                        "heal": 24,
-                        "healRate": "26.37",
-                        "showHeal": true
-                    },
-                    "children": [
-                        {
-                            "name": "地区待确认",
-                            "today": {
-                                "confirm": 6,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "confirm": 91,
-                                "suspect": 0,
-                                "dead": 2,
-                                "deadRate": "2.20",
-                                "showRate": false,
-                                "heal": 24,
-                                "healRate": "26.37",
-                                "showHeal": true
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "甘肃",
                     "today": {
                         "confirm": 0,
@@ -7725,6 +7687,44 @@
                                 "showRate": false,
                                 "heal": 1,
                                 "healRate": "0.00",
+                                "showHeal": true
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "香港",
+                    "today": {
+                        "confirm": 6,
+                        "confirmCuts": 0,
+                        "isUpdated": true
+                    },
+                    "total": {
+                        "confirm": 91,
+                        "suspect": 0,
+                        "dead": 2,
+                        "deadRate": "2.20",
+                        "showRate": false,
+                        "heal": 24,
+                        "healRate": "26.37",
+                        "showHeal": true
+                    },
+                    "children": [
+                        {
+                            "name": "地区待确认",
+                            "today": {
+                                "confirm": 6,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "confirm": 91,
+                                "suspect": 0,
+                                "dead": 2,
+                                "deadRate": "2.20",
+                                "showRate": false,
+                                "heal": 24,
+                                "healRate": "26.37",
                                 "showHeal": true
                             }
                         }
@@ -8491,13 +8491,13 @@
                 "isUpdated": false
             },
             "total": {
-                "confirm": 1595,
+                "confirm": 1766,
                 "suspect": 0,
                 "dead": 13,
-                "deadRate": "0.82",
+                "deadRate": "0.74",
                 "showRate": false,
                 "heal": 24,
-                "healRate": "1.50",
+                "healRate": "1.36",
                 "showHeal": true
             }
         },
@@ -8559,13 +8559,13 @@
                 "isUpdated": false
             },
             "total": {
-                "confirm": 139,
+                "confirm": 141,
                 "suspect": 0,
-                "dead": 19,
-                "deadRate": "13.67",
+                "dead": 22,
+                "deadRate": "15.60",
                 "showRate": false,
                 "heal": 49,
-                "healRate": "35.25",
+                "healRate": "34.75",
                 "showHeal": true
             }
         },
@@ -8600,6 +8600,23 @@
                 "showRate": false,
                 "heal": 3,
                 "healRate": "5.00",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "科威特",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 43,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 0,
+                "healRate": "0.00",
                 "showHeal": true
             }
         },
@@ -8651,23 +8668,6 @@
                 "showRate": false,
                 "heal": 14,
                 "healRate": "51.85",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "科威特",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 26,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
                 "showHeal": true
             }
         },
@@ -8740,23 +8740,6 @@
             }
         },
         {
-            "name": "阿联酋",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 13,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 4,
-                "healRate": "30.77",
-                "showHeal": true
-            }
-        },
-        {
             "name": "西班牙",
             "today": {
                 "confirm": 0,
@@ -8770,6 +8753,23 @@
                 "showRate": false,
                 "heal": 2,
                 "healRate": "15.38",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "阿联酋",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 13,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 4,
+                "healRate": "30.77",
                 "showHeal": true
             }
         },
@@ -8876,23 +8876,6 @@
             }
         },
         {
-            "name": "菲律宾",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 3,
-                "suspect": 0,
-                "dead": 1,
-                "deadRate": "33.33",
-                "showRate": false,
-                "heal": 1,
-                "healRate": "33.33",
-                "showHeal": true
-            }
-        },
-        {
             "name": "印度",
             "today": {
                 "confirm": 0,
@@ -8910,7 +8893,24 @@
             }
         },
         {
-            "name": "瑞典",
+            "name": "菲律宾",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 3,
+                "suspect": 0,
+                "dead": 1,
+                "deadRate": "33.33",
+                "showRate": false,
+                "heal": 1,
+                "healRate": "33.33",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "芬兰",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -8921,13 +8921,13 @@
                 "dead": 0,
                 "deadRate": "0.00",
                 "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
+                "heal": 1,
+                "healRate": "50.00",
                 "showHeal": true
             }
         },
         {
-            "name": "奥地利",
+            "name": "瑞典",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -8961,7 +8961,7 @@
             }
         },
         {
-            "name": "芬兰",
+            "name": "奥地利",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -8972,8 +8972,25 @@
                 "dead": 0,
                 "deadRate": "0.00",
                 "showRate": false,
-                "heal": 1,
-                "healRate": "50.00",
+                "heal": 0,
+                "healRate": "0.00",
+                "showHeal": true
+            }
+        },
+        {
+            "name": "瑞士",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 2,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 0,
+                "healRate": "0.00",
                 "showHeal": true
             }
         },
@@ -8995,41 +9012,24 @@
             }
         },
         {
+            "name": "爱沙尼亚",
+            "today": {
+                "confirm": 0,
+                "isUpdated": false
+            },
+            "total": {
+                "confirm": 1,
+                "suspect": 0,
+                "dead": 0,
+                "deadRate": "0.00",
+                "showRate": false,
+                "heal": 0,
+                "healRate": "0.00",
+                "showHeal": true
+            }
+        },
+        {
             "name": "北马其顿",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 1,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "希腊",
-            "today": {
-                "confirm": 0,
-                "isUpdated": false
-            },
-            "total": {
-                "confirm": 1,
-                "suspect": 0,
-                "dead": 0,
-                "deadRate": "0.00",
-                "showRate": false,
-                "heal": 0,
-                "healRate": "0.00",
-                "showHeal": true
-            }
-        },
-        {
-            "name": "瑞士",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9080,7 +9080,7 @@
             }
         },
         {
-            "name": "挪威",
+            "name": "希腊",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9097,7 +9097,7 @@
             }
         },
         {
-            "name": "阿尔及利亚",
+            "name": "格鲁吉亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9165,7 +9165,7 @@
             }
         },
         {
-            "name": "爱沙尼亚",
+            "name": "阿尔及利亚",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
@@ -9216,7 +9216,7 @@
             }
         },
         {
-            "name": "格鲁吉亚",
+            "name": "挪威",
             "today": {
                 "confirm": 0,
                 "isUpdated": false
