@@ -16,9 +16,10 @@ $filePath = dirname(__DIR__) . '/raw/jhu.edu';
 $baseUrl = 'https://nominatim.openstreetmap.org/search?format=json&email=' . urlencode($email) . '&q=';
 $last = 0;
 $lastTotal = array();
+$filesToSkip = array('Notice', 'README');
 foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS $csvFile) {
     $p = pathinfo($csvFile);
-    if($p['filename'] === 'Notice') {
+    if(in_array($p['filename'], $filesToSkip)) {
         continue;
     }
     $parts1 = explode('-', $p['filename']);
@@ -59,6 +60,9 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
             case 'Mainland China':
             case 'Macau':
                 $data['Country/Region'] = 'China';
+            break;
+            case 'Taipei and environs':
+                $data['Country/Region'] = 'Taiwan';
             break;
         }
         $f = array(
