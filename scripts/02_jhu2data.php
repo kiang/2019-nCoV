@@ -73,15 +73,20 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
                 'coordinates' => array(),
             ),
         );
-        $cacheFile = "{$tmpPath}/{$data['Province/State']}_{$data['Country/Region']}.json";
-        if(!file_exists($cacheFile)) {
-            $qUrl = $baseUrl . urlencode("{$data['Province/State']}, {$data['Country/Region']}");
-            file_put_contents($cacheFile, file_get_contents($qUrl));
-        }
-        $json = json_decode(file_get_contents($cacheFile), true);
-        if(!empty($json[0]['lat'])) {
-            $f['geometry']['coordinates'] = array($json[0]['lon'], $json[0]['lat']);
+        if(!empty($data['Latitude']) && !empty($data['Longitude'])) {
+            $f['geometry']['coordinates'] = array($data['Longitude'], $data['Latitude']);
             $fc['features'][] = $f;
+        } else {
+            $cacheFile = "{$tmpPath}/{$data['Province/State']}_{$data['Country/Region']}.json";
+            if(!file_exists($cacheFile)) {
+                $qUrl = $baseUrl . urlencode("{$data['Province/State']}, {$data['Country/Region']}");
+                file_put_contents($cacheFile, file_get_contents($qUrl));
+            }
+            $json = json_decode(file_get_contents($cacheFile), true);    
+            if(!empty($json[0]['lat'])) {
+                $f['geometry']['coordinates'] = array($json[0]['lon'], $json[0]['lat']);
+                $fc['features'][] = $f;
+            }
         }
     }
     file_put_contents($pointFile, json_encode($fc,  JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_NUMERIC_CHECK));
