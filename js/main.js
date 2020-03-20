@@ -129,7 +129,7 @@ var getTaiwanStyle = function(f) {
   var confirmedCount = 0;
   if(taiwanData[p.COUNTYID]) {
     confirmedCount = taiwanData[p.COUNTYID].count;
-    if(confirmedCount > 3) {
+    if(confirmedCount > 6) {
       lv = 'tw_lv5';
     } else if(confirmedCount > 2) {
       lv = 'tw_lv4';
