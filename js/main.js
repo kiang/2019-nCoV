@@ -153,6 +153,9 @@ var getPointStyle = function(f) {
   var p = f.getProperties();
   var pointStyle;
   var radiusSize = 3;
+  var fillColor = new ol.style.Fill({
+    color: 'rgba(255,0,0,0.5)'
+  });
   if(p.Confirmed < 10) {
     radiusSize = 3;
   } else if(p.Confirmed < 50) {
@@ -169,15 +172,18 @@ var getPointStyle = function(f) {
     radiusSize = p.Confirmed / 300;
     if(radiusSize < 27) {
       radiusSize = 27;
+    } else {
+      radiusSize = 80;
+      fillColor = new ol.style.Fill({
+        color: 'rgba(0,0,0,0.5)'
+      })
     }
   }
   if(!pointStylePool[radiusSize]) {
     pointStylePool[radiusSize] = new ol.style.Style({
       image: new ol.style.Circle({
         radius: radiusSize,
-        fill: new ol.style.Fill({
-          color: 'rgba(255,0,0,0.5)'
-        })
+        fill: fillColor
       }),
     });
   }
