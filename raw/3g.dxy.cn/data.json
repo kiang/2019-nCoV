@@ -579,7 +579,7 @@
         "suspectedCount": 0,
         "curedCount": 329,
         "deadCount": 4,
-        "comment": "部分治愈或死亡病例省级卫健委未明确其市区归属，归入待明确地区。",
+        "comment": "因未公布分区死亡和治愈，仅展示累计确诊和现存确诊",
         "locationId": 310000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/128\/3398299755968454977-135.json",
         "cities": [
@@ -594,39 +594,21 @@
             },
             {
                 "cityName": "外地来沪人员",
-                "currentConfirmedCount": 5,
+                "currentConfirmedCount": 4,
                 "confirmedCount": 111,
                 "suspectedCount": 0,
-                "curedCount": 106,
+                "curedCount": 107,
                 "deadCount": 0,
                 "locationId": -1
             },
             {
                 "cityName": "宝山区",
-                "currentConfirmedCount": 2,
+                "currentConfirmedCount": 1,
                 "confirmedCount": 21,
                 "suspectedCount": 0,
                 "curedCount": 19,
-                "deadCount": 0,
+                "deadCount": 1,
                 "locationId": 310113
-            },
-            {
-                "cityName": "嘉定区",
-                "currentConfirmedCount": 2,
-                "confirmedCount": 9,
-                "suspectedCount": 0,
-                "curedCount": 7,
-                "deadCount": 0,
-                "locationId": 310114
-            },
-            {
-                "cityName": "浦东新区",
-                "currentConfirmedCount": 1,
-                "confirmedCount": 61,
-                "suspectedCount": 0,
-                "curedCount": 60,
-                "deadCount": 0,
-                "locationId": 310115
             },
             {
                 "cityName": "徐汇区",
@@ -638,22 +620,22 @@
                 "locationId": 310104
             },
             {
-                "cityName": "静安区",
+                "cityName": "嘉定区",
                 "currentConfirmedCount": 1,
-                "confirmedCount": 16,
+                "confirmedCount": 9,
                 "suspectedCount": 0,
-                "curedCount": 15,
-                "deadCount": 0,
-                "locationId": 310106
+                "curedCount": 7,
+                "deadCount": 1,
+                "locationId": 310114
             },
             {
-                "cityName": "黄浦区",
-                "currentConfirmedCount": 1,
-                "confirmedCount": 6,
+                "cityName": "浦东新区",
+                "currentConfirmedCount": 0,
+                "confirmedCount": 61,
                 "suspectedCount": 0,
-                "curedCount": 5,
-                "deadCount": 0,
-                "locationId": 310101
+                "curedCount": 60,
+                "deadCount": 1,
+                "locationId": 310115
             },
             {
                 "cityName": "闵行区",
@@ -663,6 +645,15 @@
                 "curedCount": 19,
                 "deadCount": 0,
                 "locationId": 310112
+            },
+            {
+                "cityName": "静安区",
+                "currentConfirmedCount": 0,
+                "confirmedCount": 16,
+                "suspectedCount": 0,
+                "curedCount": 15,
+                "deadCount": 1,
+                "locationId": 310106
             },
             {
                 "cityName": "松江区",
@@ -719,6 +710,15 @@
                 "locationId": 310109
             },
             {
+                "cityName": "黄浦区",
+                "currentConfirmedCount": 0,
+                "confirmedCount": 6,
+                "suspectedCount": 0,
+                "curedCount": 6,
+                "deadCount": 0,
+                "locationId": 310101
+            },
+            {
                 "cityName": "青浦区",
                 "currentConfirmedCount": 0,
                 "confirmedCount": 6,
@@ -744,15 +744,6 @@
                 "curedCount": 4,
                 "deadCount": 0,
                 "locationId": 310151
-            },
-            {
-                "cityName": "待明确地区",
-                "currentConfirmedCount": -6,
-                "confirmedCount": 0,
-                "suspectedCount": 0,
-                "curedCount": 2,
-                "deadCount": 4,
-                "locationId": 0
             }
         ]
     },
