@@ -54,7 +54,12 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
                     $data['Country/Region'] = $data[$k];
                     unset($data[$k]);
                 break;
+                case 'Province_State':
+                    $data['Province/State'] = $data[$k];
+                    unset($data[$k]);
+                break;
                 case 'Date last updated':
+                case 'Last_Update':
                     $data['Last Update (UTC)'] = $data[$k];
                     unset($data[$k]);
                 break;
