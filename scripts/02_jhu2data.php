@@ -42,20 +42,35 @@ foreach(glob($repo . '/csse_covid_19_data/csse_covid_19_daily_reports/*.csv') AS
     );
     while($line = fgetcsv($fh, 2048)) {
         $data = array_combine($head, $line);
-        $data['Confirmed'] = intval($data['Confirmed']);
-        $data['Recovered'] = intval($data['Recovered']);
-        $data['Deaths'] = intval($data['Deaths']);
+        foreach($data AS $k => $v) {
+            switch($k) {
+                case 'Confirmed':
+                case 'Recovered':
+                case 'Deaths':
+                    $data[$k] = intval($data[$k]);
+                break;
+                case 'Country':
+                case 'Country_Region':
+                    $data['Country/Region'] = $data[$k];
+                    unset($data[$k]);
+                break;
+                case 'Date last updated':
+                    $data['Last Update (UTC)'] = $data[$k];
+                    unset($data[$k]);
+                break;
+                case 'Lat':
+                    $data['Latitude'] = $data[$k];
+                    unset($data[$k]);
+                break;
+                case 'Long_':
+                    $data['Longitude'] = $data[$k];
+                    unset($data[$k]);
+                break;
+            }
+        }
         $currentTotal['Confirmed'] += $data['Confirmed'];
         $currentTotal['Recovered'] += $data['Recovered'];
         $currentTotal['Deaths'] += $data['Deaths'];
-        if(isset($data['Country'])) {
-            $data['Country/Region'] = $data['Country'];
-            unset($data['Country']);
-        }
-        if(isset($data['Date last updated'])) {
-            $data['Last Update (UTC)'] = $data['Date last updated'];
-            unset($data['Date last updated']);
-        }
         switch($data['Country/Region']) {
             case 'Mainland China':
             case 'Macau':
