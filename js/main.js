@@ -295,10 +295,11 @@ map.on('singleclick', function(evt) {
       message += '<tr><th scope="row">區域 Area</th><td>' + messageTitle + '</td></tr>';
       message += '<tr><th scope="row">確診 Confirmed</th><td>' + p.confirmedCount + '</td></tr>';
       if(taiwanData[p.COUNTYID]) {
+        console.log(taiwanData[p.COUNTYID]);
         message += '<tr><td colspan="2"><ul>';
         for(k in taiwanData[p.COUNTYID].cases) {
-          var caseText = taiwanData[p.COUNTYID].cases[k]['診斷年份'] + '年';
-          caseText += '第' + taiwanData[p.COUNTYID].cases[k]['診斷週別'] + '週';
+          var caseText = taiwanData[p.COUNTYID].cases[k]['發病年份'] + '年';
+          caseText += '第' + taiwanData[p.COUNTYID].cases[k]['發病週別'] + '週';
           caseText += '確診' + taiwanData[p.COUNTYID].cases[k]['確定病例數'] + '名';
           if(taiwanData[p.COUNTYID].cases[k]['性別'] === 'F') {
             caseText += '女性，';
