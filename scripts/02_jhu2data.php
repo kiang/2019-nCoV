@@ -1,6 +1,6 @@
 <?php
 $rootPath = dirname(__DIR__);
-$repo = "{$rootPath}/tmp/2019-nCoV";
+$repo = "{$rootPath}/tmp/COVID-19";
 exec("cd {$repo} && /usr/bin/git pull");
 
 require dirname(__DIR__) . '/env.php';
