@@ -3171,7 +3171,7 @@
         "locationId": 110000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/004\/3398299758115524169-135.json",
         "highDangerCount": 0,
-        "midDangerCount": 1,
+        "midDangerCount": 2,
         "detectOrgCount": 300,
         "vaccinationOrgCount": 2,
         "cities": [
@@ -3195,7 +3195,7 @@
                 "curedCount": 20,
                 "deadCount": 0,
                 "highDangerCount": 0,
-                "midDangerCount": 0,
+                "midDangerCount": 1,
                 "locationId": 110111,
                 "notShowCurrentConfirmedCount": true,
                 "currentConfirmedCountStr": "-"
@@ -3411,7 +3411,12 @@
         "dangerAreas": [
             {
                 "cityName": "昌平区",
-                "areaName": "龙泽园街道龙跃苑二区、房山区阎村镇乐活家园社区",
+                "areaName": "龙泽园街道龙跃苑二区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "房山区",
+                "areaName": "阎村镇乐活家园社区",
                 "dangerLevel": 2
             }
         ]
