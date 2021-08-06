@@ -29,22 +29,10 @@
         "locationId": 320000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/111\/3398299753820971290-135.json",
         "highDangerCount": 2,
-        "midDangerCount": 107,
+        "midDangerCount": 106,
         "detectOrgCount": 394,
         "vaccinationOrgCount": 261,
         "cities": [
-            {
-                "cityName": "南京",
-                "currentConfirmedCount": 222,
-                "confirmedCount": 322,
-                "suspectedCount": 0,
-                "curedCount": 100,
-                "deadCount": 0,
-                "highDangerCount": 1,
-                "midDangerCount": 29,
-                "locationId": 320100,
-                "currentConfirmedCountStr": "222"
-            },
             {
                 "cityName": "扬州",
                 "currentConfirmedCount": 220,
@@ -56,6 +44,18 @@
                 "midDangerCount": 66,
                 "locationId": 321000,
                 "currentConfirmedCountStr": "220"
+            },
+            {
+                "cityName": "南京",
+                "currentConfirmedCount": 215,
+                "confirmedCount": 322,
+                "suspectedCount": 0,
+                "curedCount": 107,
+                "deadCount": 0,
+                "highDangerCount": 1,
+                "midDangerCount": 28,
+                "locationId": 320100,
+                "currentConfirmedCountStr": "215"
             },
             {
                 "cityName": "境外输入",
@@ -200,30 +200,17 @@
                 "midDangerCount": 0,
                 "locationId": 321100,
                 "currentConfirmedCountStr": "0"
-            },
-            {
-                "cityName": "待明确地区",
-                "currentConfirmedCount": -7,
-                "confirmedCount": 0,
-                "suspectedCount": 0,
-                "curedCount": 7,
-                "deadCount": 0,
-                "highDangerCount": 0,
-                "midDangerCount": 0,
-                "locationId": 0,
-                "notShowCurrentConfirmedCount": true,
-                "currentConfirmedCountStr": "-"
             }
         ],
         "dangerAreas": [
             {
-                "cityName": "南京",
-                "areaName": "江宁区禄口街道",
+                "cityName": "扬州",
+                "areaName": "邗江区双桥街道武塘社区文昌西路以南、文汇西路以北、维扬路以西、新城河路以东区域",
                 "dangerLevel": 1
             },
             {
-                "cityName": "扬州",
-                "areaName": "邗江区双桥街道武塘社区文昌西路以南、文汇西路以北、维扬路以西、新城河路以东区域",
+                "cityName": "南京",
+                "areaName": "江宁区禄口街道",
                 "dangerLevel": 1
             },
             {
@@ -564,11 +551,6 @@
             {
                 "cityName": "南京",
                 "areaName": "鼓楼区挹江门街道大桥南路10号",
-                "dangerLevel": 2
-            },
-            {
-                "cityName": "南京",
-                "areaName": "鼓楼区中央门街道工人新村小区",
                 "dangerLevel": 2
             },
             {
@@ -1006,15 +988,15 @@
         "cities": [
             {
                 "cityName": "广州",
-                "currentConfirmedCount": 59,
+                "currentConfirmedCount": 56,
                 "confirmedCount": 1537,
                 "suspectedCount": 2,
-                "curedCount": 1477,
+                "curedCount": 1480,
                 "deadCount": 1,
                 "highDangerCount": 0,
                 "midDangerCount": 0,
                 "locationId": 440100,
-                "currentConfirmedCountStr": "59"
+                "currentConfirmedCountStr": "56"
             },
             {
                 "cityName": "佛山",
@@ -1246,10 +1228,10 @@
             },
             {
                 "cityName": "待明确地区",
-                "currentConfirmedCount": -7,
+                "currentConfirmedCount": -4,
                 "confirmedCount": 0,
                 "suspectedCount": 0,
-                "curedCount": 7,
+                "curedCount": 4,
                 "deadCount": 0,
                 "highDangerCount": 0,
                 "midDangerCount": 0,
@@ -2728,7 +2710,7 @@
         "locationId": 420000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/618\/3398299751673487511-135.json",
         "highDangerCount": 0,
-        "midDangerCount": 4,
+        "midDangerCount": 5,
         "detectOrgCount": 217,
         "vaccinationOrgCount": 431,
         "cities": [
@@ -2776,7 +2758,7 @@
                 "curedCount": 1528,
                 "deadCount": 52,
                 "highDangerCount": 0,
-                "midDangerCount": 1,
+                "midDangerCount": 2,
                 "locationId": 421000,
                 "currentConfirmedCountStr": "2"
             },
@@ -2951,13 +2933,18 @@
         ],
         "dangerAreas": [
             {
-                "cityName": "黄冈",
-                "areaName": "红安县永佳河镇",
+                "cityName": "荆州",
+                "areaName": "沙市区崇文街道",
                 "dangerLevel": 2
             },
             {
                 "cityName": "荆州",
                 "areaName": "沙市区塔桥路以东、江津中路以北、工农路以西、东岳东路以南围合区（沙市区政府和荆州理工职业学院除外）",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "黄冈",
+                "areaName": "红安县永佳河镇",
                 "dangerLevel": 2
             },
             {
