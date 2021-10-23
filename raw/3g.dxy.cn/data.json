@@ -2,8 +2,8 @@
     {
         "provinceName": "台湾",
         "provinceShortName": "台湾",
-        "currentConfirmedCount": 1769,
-        "confirmedCount": 16357,
+        "currentConfirmedCount": 1776,
+        "confirmedCount": 16364,
         "suspectedCount": 485,
         "curedCount": 13742,
         "deadCount": 846,
@@ -220,8 +220,8 @@
     {
         "provinceName": "香港",
         "provinceShortName": "香港",
-        "currentConfirmedCount": 88,
-        "confirmedCount": 12313,
+        "currentConfirmedCount": 94,
+        "confirmedCount": 12319,
         "suspectedCount": 181,
         "curedCount": 12012,
         "deadCount": 213,
@@ -662,8 +662,8 @@
     {
         "provinceName": "内蒙古自治区",
         "provinceShortName": "内蒙古",
-        "currentConfirmedCount": 40,
-        "confirmedCount": 457,
+        "currentConfirmedCount": 43,
+        "confirmedCount": 460,
         "suspectedCount": 35,
         "curedCount": 416,
         "deadCount": 1,
@@ -710,6 +710,18 @@
                 "midDangerCount": 0,
                 "locationId": 0,
                 "currentConfirmedCountStr": "4"
+            },
+            {
+                "cityName": "呼和浩特",
+                "currentConfirmedCount": 3,
+                "confirmedCount": 10,
+                "suspectedCount": 0,
+                "curedCount": 7,
+                "deadCount": 0,
+                "highDangerCount": 0,
+                "midDangerCount": 0,
+                "locationId": 150100,
+                "currentConfirmedCountStr": "3"
             },
             {
                 "cityName": "呼伦贝尔",
@@ -769,18 +781,6 @@
                 "highDangerCount": 0,
                 "midDangerCount": 0,
                 "locationId": 150800,
-                "currentConfirmedCountStr": "0"
-            },
-            {
-                "cityName": "呼和浩特",
-                "currentConfirmedCount": 0,
-                "confirmedCount": 7,
-                "suspectedCount": 0,
-                "curedCount": 7,
-                "deadCount": 0,
-                "highDangerCount": 0,
-                "midDangerCount": 0,
-                "locationId": 150100,
                 "currentConfirmedCountStr": "0"
             },
             {
@@ -3288,7 +3288,7 @@
         "locationId": 640000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/353\/3398299755968455019-135.json",
         "highDangerCount": 0,
-        "midDangerCount": 0,
+        "midDangerCount": 3,
         "detectOrgCount": 27,
         "vaccinationOrgCount": 5,
         "cities": [
@@ -3312,7 +3312,7 @@
                 "curedCount": 38,
                 "deadCount": 0,
                 "highDangerCount": 0,
-                "midDangerCount": 0,
+                "midDangerCount": 3,
                 "locationId": 640100,
                 "currentConfirmedCountStr": "5"
             },
@@ -3365,7 +3365,23 @@
                 "currentConfirmedCountStr": "0"
             }
         ],
-        "dangerAreas": []
+        "dangerAreas": [
+            {
+                "cityName": "银川",
+                "areaName": "金凤区森林半岛小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "银川",
+                "areaName": "兴庆区太阳都市花园小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "银川",
+                "areaName": "西夏区物华兴洲苑小区",
+                "dangerLevel": 2
+            }
+        ]
     },
     {
         "provinceName": "澳门",
