@@ -2633,7 +2633,7 @@
         "locationId": 410000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/958\/3398299751673487456-135.json",
         "highDangerCount": 0,
-        "midDangerCount": 0,
+        "midDangerCount": 1,
         "detectOrgCount": 197,
         "vaccinationOrgCount": 234,
         "cities": [
@@ -2645,7 +2645,7 @@
                 "curedCount": 217,
                 "deadCount": 5,
                 "highDangerCount": 0,
-                "midDangerCount": 0,
+                "midDangerCount": 1,
                 "locationId": 410100,
                 "notShowCurrentConfirmedCount": true,
                 "currentConfirmedCountStr": "-"
@@ -2896,7 +2896,13 @@
                 "currentConfirmedCountStr": "-91"
             }
         ],
-        "dangerAreas": []
+        "dangerAreas": [
+            {
+                "cityName": "郑州",
+                "areaName": "荥阳市贾峪镇滨湖社区",
+                "dangerLevel": 2
+            }
+        ]
     },
     {
         "provinceName": "福建省",
