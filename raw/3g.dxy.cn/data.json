@@ -28,7 +28,7 @@
         "comment": "黑龙江卫健委未明确部分治愈病例的地市归属，因此各地市的现存确诊存在一定偏差。",
         "locationId": 230000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/643\/3398299753820971199-135.json",
-        "highDangerCount": 2,
+        "highDangerCount": 3,
         "midDangerCount": 22,
         "detectOrgCount": 315,
         "vaccinationOrgCount": 1,
@@ -40,7 +40,7 @@
                 "suspectedCount": 0,
                 "curedCount": 27,
                 "deadCount": 0,
-                "highDangerCount": 2,
+                "highDangerCount": 3,
                 "midDangerCount": 18,
                 "locationId": 231100,
                 "currentConfirmedCountStr": "244"
@@ -221,6 +221,11 @@
             {
                 "cityName": "黑河",
                 "areaName": "爱辉区鹿源春社区宏志小区",
+                "dangerLevel": 1
+            },
+            {
+                "cityName": "黑河",
+                "areaName": "爱辉区热电社区阳光家园小区",
                 "dangerLevel": 1
             },
             {
@@ -1746,7 +1751,7 @@
         "locationId": 210000,
         "statisticsData": "https:\/\/file1.dxycdn.com\/2020\/0223\/815\/3398299758115938736-135.json",
         "highDangerCount": 0,
-        "midDangerCount": 3,
+        "midDangerCount": 13,
         "detectOrgCount": 192,
         "vaccinationOrgCount": 204,
         "cities": [
@@ -1758,7 +1763,7 @@
                 "curedCount": 162,
                 "deadCount": 0,
                 "highDangerCount": 0,
-                "midDangerCount": 3,
+                "midDangerCount": 13,
                 "locationId": 210200,
                 "currentConfirmedCountStr": "45"
             },
@@ -1934,7 +1939,47 @@
         "dangerAreas": [
             {
                 "cityName": "大连",
+                "areaName": "城关街道黄金社区新华小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "城关街道海洋村刘亮屯",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "城关街道水仙社区未来新家园小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "城关街道新兴社区新华路一段22号楼",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "昌盛街道将军湖社区鑫兴紫郡小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
                 "areaName": "大连庄河市城关街道海洋村邵亮屯",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "甘井子区泉水街道龙园社区龙畔金泉五期K3区26号楼",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "南关岭街道姚兴社区姚家路32号楼",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "兴达街道干沟社区下河沿屯",
                 "dangerLevel": 2
             },
             {
@@ -1944,7 +1989,17 @@
             },
             {
                 "cityName": "大连",
+                "areaName": "庄河市昌盛街道将军湖社区铭润福邸小区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
                 "areaName": "庄河市新华街道小寺社区",
+                "dangerLevel": 2
+            },
+            {
+                "cityName": "大连",
+                "areaName": "中山区葵英街道武昌社区武昌街184号楼",
                 "dangerLevel": 2
             }
         ]
@@ -2277,15 +2332,15 @@
             },
             {
                 "cityName": "阳江",
-                "currentConfirmedCount": 3,
+                "currentConfirmedCount": 2,
                 "confirmedCount": 28,
                 "suspectedCount": 0,
-                "curedCount": 25,
+                "curedCount": 26,
                 "deadCount": 0,
                 "highDangerCount": 0,
                 "midDangerCount": 0,
                 "locationId": 441700,
-                "currentConfirmedCountStr": "3"
+                "currentConfirmedCountStr": "2"
             },
             {
                 "cityName": "珠海",
@@ -2466,18 +2521,6 @@
                 "midDangerCount": 0,
                 "locationId": 441600,
                 "currentConfirmedCountStr": "0"
-            },
-            {
-                "cityName": "待明确地区",
-                "currentConfirmedCount": -1,
-                "confirmedCount": 0,
-                "suspectedCount": 0,
-                "curedCount": 1,
-                "deadCount": 0,
-                "highDangerCount": 0,
-                "midDangerCount": 0,
-                "locationId": 0,
-                "currentConfirmedCountStr": "-1"
             }
         ],
         "dangerAreas": []
