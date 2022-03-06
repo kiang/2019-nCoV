@@ -1,31 +1,31 @@
 {
-    "lastUpdateTime": "2022-03-06 22:40:22",
+    "lastUpdateTime": "2022-03-06 23:21:53",
     "chinaTotal": {
-        "confirm": 319320,
+        "confirm": 319321,
         "heal": 138250,
         "dead": 7263,
-        "nowConfirm": 173807,
+        "nowConfirm": 173808,
         "suspect": 9,
         "nowSevere": 14,
         "importedCase": 15343,
         "noInfect": 1647,
         "showLocalConfirm": 1,
         "showlocalinfeciton": 1,
-        "localConfirm": 1462,
+        "localConfirm": 1463,
         "noInfectH5": 570,
         "localConfirmH5": 1410,
         "local_acc_confirm": 110868
     },
     "chinaAdd": {
-        "confirm": -12539,
+        "confirm": -12538,
         "heal": 848,
         "dead": 220,
-        "nowConfirm": 17401,
+        "nowConfirm": 17402,
         "suspect": -2,
         "nowSevere": 0,
         "importedCase": 154,
         "noInfect": 209,
-        "localConfirm": 163,
+        "localConfirm": 164,
         "noInfectH5": 127,
         "localConfirmH5": 175
     },
@@ -47,12 +47,12 @@
         {
             "name": "中国",
             "today": {
-                "confirm": -12539,
+                "confirm": -12538,
                 "isUpdated": true
             },
             "total": {
-                "nowConfirm": 173807,
-                "confirm": 319320,
+                "nowConfirm": 173808,
+                "confirm": 319321,
                 "dead": 7263,
                 "showRate": false,
                 "heal": 138250,
@@ -3816,23 +3816,42 @@
                 {
                     "name": "吉林",
                     "today": {
-                        "confirm": 25,
+                        "confirm": 26,
                         "confirmCuts": 0,
                         "isUpdated": true,
                         "tip": "",
                         "wzz_add": 24
                     },
                     "total": {
-                        "nowConfirm": 83,
-                        "confirm": 674,
+                        "nowConfirm": 84,
+                        "confirm": 675,
                         "dead": 3,
                         "showRate": false,
                         "heal": 588,
                         "showHeal": true,
                         "wzz": 57,
-                        "provinceLocalConfirm": 612
+                        "provinceLocalConfirm": 613
                     },
                     "children": [
+                        {
+                            "name": "延边",
+                            "today": {
+                                "confirm": 10,
+                                "confirmCuts": 0,
+                                "isUpdated": true
+                            },
+                            "total": {
+                                "nowConfirm": 27,
+                                "confirm": 32,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 5,
+                                "showHeal": true,
+                                "grade": "部分中风险",
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
                         {
                             "name": "境外输入",
                             "today": {
@@ -3847,25 +3866,6 @@
                                 "showRate": false,
                                 "heal": 35,
                                 "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "延边",
-                            "today": {
-                                "confirm": 9,
-                                "confirmCuts": 0,
-                                "isUpdated": true
-                            },
-                            "total": {
-                                "nowConfirm": 26,
-                                "confirm": 31,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 5,
-                                "showHeal": true,
-                                "grade": "部分中风险",
                                 "wzz": 0,
                                 "provinceLocalConfirm": 0
                             }
@@ -7946,46 +7946,6 @@
                     ]
                 },
                 {
-                    "name": "澳门",
-                    "today": {
-                        "confirm": 0,
-                        "confirmCuts": 0,
-                        "isUpdated": true,
-                        "tip": "",
-                        "wzz_add": 0
-                    },
-                    "total": {
-                        "nowConfirm": 3,
-                        "confirm": 82,
-                        "dead": 0,
-                        "showRate": false,
-                        "heal": 79,
-                        "showHeal": true,
-                        "wzz": 0,
-                        "provinceLocalConfirm": 0
-                    },
-                    "children": [
-                        {
-                            "name": "地区待确认",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 3,
-                                "confirm": 82,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 79,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        }
-                    ]
-                },
-                {
                     "name": "海南",
                     "today": {
                         "confirm": 0,
@@ -8298,6 +8258,46 @@
                     ]
                 },
                 {
+                    "name": "澳门",
+                    "today": {
+                        "confirm": 0,
+                        "confirmCuts": 0,
+                        "isUpdated": true,
+                        "tip": "",
+                        "wzz_add": 0
+                    },
+                    "total": {
+                        "nowConfirm": 3,
+                        "confirm": 82,
+                        "dead": 0,
+                        "showRate": false,
+                        "heal": 79,
+                        "showHeal": true,
+                        "wzz": 0,
+                        "provinceLocalConfirm": 0
+                    },
+                    "children": [
+                        {
+                            "name": "地区待确认",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 3,
+                                "confirm": 82,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 79,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "陕西",
                     "today": {
                         "confirm": 2,
@@ -8576,7 +8576,7 @@
                     ]
                 },
                 {
-                    "name": "西藏",
+                    "name": "青海",
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
@@ -8586,17 +8586,35 @@
                     },
                     "total": {
                         "nowConfirm": 0,
-                        "confirm": 1,
+                        "confirm": 30,
                         "dead": 0,
                         "showRate": false,
-                        "heal": 1,
+                        "heal": 30,
                         "showHeal": true,
                         "wzz": 0,
                         "provinceLocalConfirm": 0
                     },
                     "children": [
                         {
-                            "name": "拉萨",
+                            "name": "西宁",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 26,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 26,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "海东",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -8612,11 +8630,29 @@
                                 "wzz": 0,
                                 "provinceLocalConfirm": 0
                             }
+                        },
+                        {
+                            "name": "海北州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 3,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 3,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
                         }
                     ]
                 },
                 {
-                    "name": "宁夏",
+                    "name": "贵州",
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
@@ -8626,17 +8662,17 @@
                     },
                     "total": {
                         "nowConfirm": 0,
-                        "confirm": 122,
-                        "dead": 0,
+                        "confirm": 162,
+                        "dead": 2,
                         "showRate": false,
-                        "heal": 122,
+                        "heal": 160,
                         "showHeal": true,
                         "wzz": 0,
-                        "provinceLocalConfirm": 118
+                        "provinceLocalConfirm": 161
                     },
                     "children": [
                         {
-                            "name": "中卫",
+                            "name": "铜仁",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -8644,46 +8680,10 @@
                             },
                             "total": {
                                 "nowConfirm": 0,
-                                "confirm": 4,
+                                "confirm": 12,
                                 "dead": 0,
                                 "showRate": false,
-                                "heal": 4,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "地区待确认",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 0,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 0,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "吴忠",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 39,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 39,
+                                "heal": 12,
                                 "showHeal": true,
                                 "grade": "全部低风险",
                                 "wzz": 0,
@@ -8691,44 +8691,7 @@
                             }
                         },
                         {
-                            "name": "银川",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 68,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 68,
-                                "showHeal": true,
-                                "grade": "全部低风险",
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "境外输入",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 4,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 4,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "固原",
+                            "name": "安顺",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -8746,7 +8709,25 @@
                             }
                         },
                         {
-                            "name": "石嘴山",
+                            "name": "遵义",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 44,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 44,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "境外输入",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -8764,7 +8745,7 @@
                             }
                         },
                         {
-                            "name": "宁东管委会",
+                            "name": "贵阳",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -8772,10 +8753,100 @@
                             },
                             "total": {
                                 "nowConfirm": 0,
-                                "confirm": 1,
+                                "confirm": 36,
+                                "dead": 1,
+                                "showRate": false,
+                                "heal": 35,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "六盘水",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 10,
+                                "dead": 1,
+                                "showRate": false,
+                                "heal": 9,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "毕节",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 23,
                                 "dead": 0,
                                 "showRate": false,
-                                "heal": 1,
+                                "heal": 23,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "黔南州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 17,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 17,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "黔东南州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 10,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 10,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "黔西南州",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 4,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 4,
                                 "showHeal": true,
                                 "wzz": 0,
                                 "provinceLocalConfirm": 0
@@ -9318,7 +9389,7 @@
                     ]
                 },
                 {
-                    "name": "贵州",
+                    "name": "宁夏",
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
@@ -9328,17 +9399,17 @@
                     },
                     "total": {
                         "nowConfirm": 0,
-                        "confirm": 162,
-                        "dead": 2,
+                        "confirm": 122,
+                        "dead": 0,
                         "showRate": false,
-                        "heal": 160,
+                        "heal": 122,
                         "showHeal": true,
                         "wzz": 0,
-                        "provinceLocalConfirm": 161
+                        "provinceLocalConfirm": 118
                     },
                     "children": [
                         {
-                            "name": "铜仁",
+                            "name": "中卫",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -9346,10 +9417,46 @@
                             },
                             "total": {
                                 "nowConfirm": 0,
-                                "confirm": 12,
+                                "confirm": 4,
                                 "dead": 0,
                                 "showRate": false,
-                                "heal": 12,
+                                "heal": 4,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "地区待确认",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 0,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 0,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "吴忠",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 39,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 39,
                                 "showHeal": true,
                                 "grade": "全部低风险",
                                 "wzz": 0,
@@ -9357,7 +9464,44 @@
                             }
                         },
                         {
-                            "name": "安顺",
+                            "name": "银川",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 68,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 68,
+                                "showHeal": true,
+                                "grade": "全部低风险",
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "境外输入",
+                            "today": {
+                                "confirm": 0,
+                                "confirmCuts": 0,
+                                "isUpdated": false
+                            },
+                            "total": {
+                                "nowConfirm": 0,
+                                "confirm": 4,
+                                "dead": 0,
+                                "showRate": false,
+                                "heal": 4,
+                                "showHeal": true,
+                                "wzz": 0,
+                                "provinceLocalConfirm": 0
+                            }
+                        },
+                        {
+                            "name": "固原",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -9375,25 +9519,7 @@
                             }
                         },
                         {
-                            "name": "遵义",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 44,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 44,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "境外输入",
+                            "name": "石嘴山",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -9411,7 +9537,7 @@
                             }
                         },
                         {
-                            "name": "贵阳",
+                            "name": "宁东管委会",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -9419,100 +9545,10 @@
                             },
                             "total": {
                                 "nowConfirm": 0,
-                                "confirm": 36,
-                                "dead": 1,
-                                "showRate": false,
-                                "heal": 35,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "六盘水",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 10,
-                                "dead": 1,
-                                "showRate": false,
-                                "heal": 9,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "毕节",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 23,
+                                "confirm": 1,
                                 "dead": 0,
                                 "showRate": false,
-                                "heal": 23,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "黔南州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 17,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 17,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "黔东南州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 10,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 10,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "黔西南州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 4,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 4,
+                                "heal": 1,
                                 "showHeal": true,
                                 "wzz": 0,
                                 "provinceLocalConfirm": 0
@@ -9521,7 +9557,7 @@
                     ]
                 },
                 {
-                    "name": "青海",
+                    "name": "西藏",
                     "today": {
                         "confirm": 0,
                         "confirmCuts": 0,
@@ -9531,35 +9567,17 @@
                     },
                     "total": {
                         "nowConfirm": 0,
-                        "confirm": 30,
+                        "confirm": 1,
                         "dead": 0,
                         "showRate": false,
-                        "heal": 30,
+                        "heal": 1,
                         "showHeal": true,
                         "wzz": 0,
                         "provinceLocalConfirm": 0
                     },
                     "children": [
                         {
-                            "name": "西宁",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 26,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 26,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "海东",
+                            "name": "拉萨",
                             "today": {
                                 "confirm": 0,
                                 "confirmCuts": 0,
@@ -9571,24 +9589,6 @@
                                 "dead": 0,
                                 "showRate": false,
                                 "heal": 1,
-                                "showHeal": true,
-                                "wzz": 0,
-                                "provinceLocalConfirm": 0
-                            }
-                        },
-                        {
-                            "name": "海北州",
-                            "today": {
-                                "confirm": 0,
-                                "confirmCuts": 0,
-                                "isUpdated": false
-                            },
-                            "total": {
-                                "nowConfirm": 0,
-                                "confirm": 3,
-                                "dead": 0,
-                                "showRate": false,
-                                "heal": 3,
                                 "showHeal": true,
                                 "wzz": 0,
                                 "provinceLocalConfirm": 0
